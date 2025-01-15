@@ -13,3 +13,15 @@
 4. Se connecter à notre compte GitHub à partir de VSCode.
 
 
+
+
+5.Creons un dossier  nommez lab1
+6.Creons fichier nommer  README.md
+7.Ecrivons"Geo7630" dans le fichier README.md du fichier nouvellement cree
+8.Commitez et poussez le fichier README.md sur GitHub
+9. Si nous recevons le message d'erreur lors de commit et pousser alors nous devons configurer notre VSCODE  avec notre nom d'utilisateur et l'adresse courriel  avant de pouvoir envoyer les donnees sur GitHub.
+Appuyons le CTRL + J  et entrez la ligne ci-dessous pour configurer notre nom d'utilisateur et l'adresse couriel.
+9.1 Nom d'utilisateur :
+git config --global user.name "UMBD28348904"
+9.2 Pour l'adresse courielle
+git config --global user.email "glogowski.clement@uqam.ca"
