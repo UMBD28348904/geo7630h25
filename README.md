@@ -22,7 +22,7 @@
 9. Si nous recevons le message d'erreur lors de commit et pousser alors nous devons configurer notre VSCODE  avec notre nom d'utilisateur et l'adresse courriel  avant de pouvoir envoyer les donnees sur GitHub.
 Appuyons le CTRL + J  et entrez la ligne ci-dessous pour configurer notre nom d'utilisateur et l'adresse couriel.
 
-i. Nom d'utilisateur :
+- Nom d'utilisateur :
 git config --global user.name "UMBD28348904"
-ii. Pour l'adresse courielle
+- Pour l'adresse courielle
 git config --global user.email "glogowski.clement@uqam.ca"
