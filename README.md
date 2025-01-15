@@ -1,4 +1,4 @@
-# https://fr.pngtree.com/freepng/books-icon_3728068.html GEO 7630 Laboratoire 1 : Prise en main des outils
+# GEO 7630 Laboratoire 1 : Prise en main des outils
 
 ## Objectifs du laboratoire
 
