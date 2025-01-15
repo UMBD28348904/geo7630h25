@@ -2,13 +2,14 @@
 
 ## Objectifs du laboratoire
 
-- La familiariseation avec les outils essentiels  pour le cours GEO 7630
--  Creer un environnement de travail collaboratif, acceder a une base des donnees , manipuler des donnees geospatiale, et visualiser ces des donnees dans SIG
+- Se familiariser avec les outils essentiels pour le cours GEO 7630.
+- Créer un environnement de travail collaboratif, accéder à une base de données, manipuler des données géospatiales et visualiser ces données dans un SIG.
 
-### Tache
-#### 1.Creer un compte GitHub
-1. Se connecter sur https://github.com/ ou creer un compte
-2. Lancez VSCode sur l'ordinateur
-3. 
+### Tâches 
+#### 1. Créer un compte GitHub
+1. Se connecter sur https://github.com/ ou créer un compte.
+2. Créer un nouveau dépôt (repository) et le nommer geo7630h25.
+3. Lancer VSCode sur l'ordinateur.
+4. Se connecter à notre compte GitHub à partir de VSCode.
 
 
