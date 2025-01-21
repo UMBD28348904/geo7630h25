@@ -25,4 +25,4 @@ Appuyons le CTRL + J  et entrez la ligne ci-dessous pour configurer notre nom d'
 - Nom d'utilisateur :
 git config --global user.name "UMBD28348904"
 - Pour l'adresse courielle
-git config --global user.email "glogowski.clement@uqam.ca"
+git config --global user.email "umba.dady_dimabanza@courrier.uqam.ca"
