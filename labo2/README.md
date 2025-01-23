@@ -1,1 +1,2 @@
-**📚GEO 7630-Jointure et traitement des données géospatiales**
+# 📚GEO 7630 Laboratoire 1 : Prise en main des outils
+
