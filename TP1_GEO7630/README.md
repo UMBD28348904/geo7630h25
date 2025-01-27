@@ -103,16 +103,16 @@ https://www.donneesquebec.ca/recherche/dataset/vmtl-geologie-des-depots-meubles/
 https://www.donneesquebec.ca/recherche/dataset/vmtl-cuvettes-retention-eau-ruissellement/resource/1e558f13-6532-4bcc-95fc-457643eda6f9
 
 Débits cours d’eau et précipitations
+
 https://www.donneesquebec.ca/recherche/dataset/donnees-hydrometeorologiques/resource/94b6ebfd-309f-4500-a5a1-9604001dd24f
 https://www.donneesquebec.ca/recherche/dataset/donnees-hydrometeorologiques/resource/38d6d7d2-6dfc-46db-a395-f7c800b06805
 
 ## RÉFÉRENCES 
 
 -	Cartographie du risque d’inondation en milieu urbain adaptée à la gestion de crise analyse préliminaire, Marion TANGUY (2012)
+  
 https://www.google.com/search?client=firefox-b-d&q=-+Cartographie+du+risque+d%E2%80%99inondation+en+milieu+urbain+adapt%C3%A9e+%C3%A0+la+gestion+de+crise+analyse+pr%C3%A9liminaire%2C+Marion+TANGUY+%282012%29
 
--	Cartographie dynamique du risque d’inondations en milieu urbain, rapport de recherche R1428, Jimmy Poulin et al., Septembre 2012
--	
 -	https://www.ouranos.ca/sites/default/files/2024-01/trousse-information-questions-reponses-innondations.pdf
 
 -	https://unpointcinq.ca/sinspirer/geosapiens-un-logiciel-pour-prevenir-les-risques-dinondation/
