@@ -1,6 +1,15 @@
+  # Travail pratique n°1 de l'Intégration et visualisation des données géographique (GEO7630)
+
+Présentés par :
+
+## Dady Umba Dimabanza
+## Goncalves Tatiana Patricia
+
+
+
 # 📒 Sujet : Modélisation géospatiale des zones à risque d’inondation dans la ville de Montréal
 
-##  I.	Mise en contexte
+## 📚 I.	Mise en contexte
 
 Les inondations sont, de toutes les catastrophes naturelles qui frappent le monde chaque année, les plus fréquentes, les plus dommageables et les plus mortelles (Pulvirenti et al., 2011b). Elles sont la source de près de la moitié des décès occasionnés par les catastrophes naturelles au cours des 50 dernières années, et sont responsables de près du tiers des pertes économiques au niveau mondial (James, 2008).
 
@@ -9,16 +18,17 @@ Au Canada, ce phénomène demeure l’aléa naturel le plus commun et le plus co
 Située dans la province du Québec, la ville de Montréal n’est pas en marge quant à ce phénomène, au contraire elle a déjà été confrontée à des événements d'inondations importants, notamment en 2017 et 2019. Plusieurs actions sont menées par la municipalité ainsi que des organismes communautaires afin d’apporter des solutions durables pour une meilleure gestion des risques d'inondations dans la métropole. C’est dans cette dynamique que le présent projet s’inscrit, et entrevoit apporter sa contribution par le biais des outils SIG.
 
 
-## I.1. Objectifs
+## 🎯I.1. Objectifs
 
 •	Identifier les zones vulnérables à l’inondation grâce aux données géospatiales.
 •	Élaborer des cartes des risques
 •	Création d’une application qui permettra d’informer le public sur les zones à risques d’inondation dans la ville
 
-## I.2 Méthodologie
+## 📝I.2 Méthodologie
 •	Collecte des données géospatiales (Topographie, hydrologie, climatologie, pédologie)
 •	Utilisation des logiciels SIG pour l’analyse spatiale et création de modèle hydraulique, ainsi que Arcgis online pour la visualisation
-•	Utilisation de logiciel ETL pour l’extraction des données et leur traitement 
+•	Utilisation de logiciel ETL pour l’extraction des données et leur traitement
+
 •	Analyse spatiale : 
 
 Analyse topographique
@@ -44,31 +54,36 @@ Création de produits cartographiques et tableaux de bord
 -	Cartes interactives : Produire des cartes dynamiques avec des couches visualisant les zones inondées selon différents scénarios.
 -	Tableaux de bord : Utiliser ArcGIS Dashboard pour intégrer les données spatiales et fournir un outil interactif permettant de visualiser les résultats
 
-## II. Données Géospatiales
+## 💡II. Données Géospatiales
 II.1 Données Lidar 
+
 Ces données fournissent le modèle numérique du terrain et le modèle numérique de surface.
 Le MNT peut permettre de simuler le déplacement de l'eau, les zones de rétention et d’écoulement, et donc d'évaluer les risques d'inondation.
 
 II.2 Données météorologiques et hydrologiques
+
 -	Réseaux hydrographiques : Localisation des rivières, cours d’eau, lacs et zones humides.
 -	Débits des cours d’eau : Données historiques des débits et niveaux d’eau pour estimer les scénarios de crues.
 -	Précipitations : Données météorologiques historiques
 
 II.3 Données sur la nature et l’occupation du sol
+
 -	Cartes d’occupation des sol (Zones résidentielles, commerciales, agricoles etc.)
 -	Données sur l’imperméabilisation
 -	Données pédologiques
-II.4 Données de télédétection 
+  
+II.4 Données de télédétection
+
 -	Imagerie thermique pour évaluer les zones où l’eau stagne (NDWI)
 
-## III.	Intérêt du tableau de bord
+## 📉III.	Intérêt du tableau de bord
 
 -	Gestion des risques et planification urbaine : Aider les autorités municipales à mieux comprendre où les inondations pourraient se produire afin de renforcer la sécurité des habitants, améliorer les infrastructures et planifier les zones de construction.
 -	Mise en place d’un système d’alerte des inondations (carte de vigilance des inondations) : Fournir des outils pour prédire les inondations futures, informer les citoyens et mettre en place des plans d'urgence (Possibilité de développer un algorithme qui permet de déclencher une alerte si la hauteur d’eau dépasse telle mm).
 -	Amélioration de la résilience urbaine : Concevoir des systèmes d'évacuation, de drainage ou des infrastructures résilientes pour minimiser les impacts des inondations sur les vies humaines et les infrastructures essentielles.
 
 
-## Lien pour télécharger les données :
+## 📇Lien pour télécharger les données :
 
 Rivière : https://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_rivers_north_america.zip
 
