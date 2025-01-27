@@ -17,7 +17,7 @@ Au Canada, ce phénomène demeure l’aléa naturel le plus commun et le plus co
 
 Située dans la province du Québec, la ville de Montréal n’est pas en marge quant à ce phénomène, au contraire elle a déjà été confrontée à des événements d'inondations importants, notamment en 2017 et 2019. Plusieurs actions sont menées par la municipalité ainsi que des organismes communautaires afin d’apporter des solutions durables pour une meilleure gestion des risques d'inondations dans la métropole. C’est dans cette dynamique que le présent projet s’inscrit, et entrevoit apporter sa contribution par le biais des outils SIG.
 
-## II.Problématique
+## 🔎II.Problématique
 
 Les connaissances actuelles et les progrès technologiques offrent aux décideurs et aux populations de plus en plus d’outils (nombreux modèles hydrologiques et hydrauliques) et d’informations utiles (données géospatiales à haute résolution) pour optimiser la gestion et l’aménagement sécuritaire du territoire (Metzger R. 2003). La demande croissante pour des connaissances de pointe issues de la recherche scientifique s’explique notamment par une forte hausse démographique, laquelle s’accompagne par la densification des zones urbaines et périurbaines dont plusieurs sont situées au sein de zones inondables à des fréquences variées. Pourtant, il existe des outils pour aider à mieux comprendre, gérer et appréhender le risque d’inondation, notamment la cartographie des zones inondables qui est fréquemment utilisée pour assurer la gestion sécuritaire des villes et des municipalités situées dans les zones sensibles. 
 Les outils de cartographie du risque d’inondation en milieu urbain peuvent jouer un rôle très important dans l’optimisation des procédures de planification et d’implantation des mesures d’urgence visant à réduire les impacts d’une inondation en cours sur la population, mais sont encore peu développés et sont rarement opérationnels en phase de gestion de crise, Marion Tanguy, 2012.
@@ -109,15 +109,15 @@ Débits cours d’eau et précipitations
 https://www.donneesquebec.ca/recherche/dataset/donnees-hydrometeorologiques/resource/94b6ebfd-309f-4500-a5a1-9604001dd24f
 https://www.donneesquebec.ca/recherche/dataset/donnees-hydrometeorologiques/resource/38d6d7d2-6dfc-46db-a395-f7c800b06805
 
-## RÉFÉRENCES 
+## 📙RÉFÉRENCES 
 
 -	Cartographie du risque d’inondation en milieu urbain adaptée à la gestion de crise analyse préliminaire, Marion TANGUY (2012)
   
 https://numerique.banq.qc.ca/patrimoine/details/52327/2316328
 
 -	Cartographie dynamique du risque d’inondations en milieu urbain, rapport de recherche R1428, Jimmy Poulin et al., Septembre 2012
--	
-https://espace.inrs.ca/id/eprint/1661/1/R001428.pdf
+  
+  https://espace.inrs.ca/id/eprint/1661/1/R001428.pdf
 
 -	https://www.ouranos.ca/sites/default/files/2024-01/trousse-information-questions-reponses-innondations.pdf
 
