@@ -72,15 +72,17 @@ Le MNT peut permettre de simuler le déplacement de l'eau, les zones de rétenti
 
 ## 📇Lien pour télécharger les données :
 
-Rivière : https://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_rivers_north_america.zip
+Rivière : 
+
+- https://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_rivers_north_america.zip
 
 Lac et réservoir d’eau : 
 
-https://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_lakes_north_america.zip
+- https://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_lakes_north_america.zip
 
 Occupation du sol Montréal :
 
-https://donnees.montreal.ca/dataset/0eaea940-aafc-43bc-bab2-a87ac66a93ba/resource/c5dbe902-a587-4af5-ab97-d5182fa8ecba/download/affectationpu.zip
+- https://donnees.montreal.ca/dataset/0eaea940-aafc-43bc-bab2-a87ac66a93ba/resource/c5dbe902-a587-4af5-ab97-d5182fa8ecba/download/affectationpu.zip
 
 Modèle numérique du terrain 
 
@@ -101,23 +103,24 @@ Modèle numérique du terrain
 
 Type de sols
 
-https://www.donneesquebec.ca/recherche/dataset/vmtl-geologie-des-depots-meubles/resource/0b56a4a4-212f-4438-9681-657d1c004a5b
-https://www.donneesquebec.ca/recherche/dataset/vmtl-cuvettes-retention-eau-ruissellement/resource/1e558f13-6532-4bcc-95fc-457643eda6f9
+- https://www.donneesquebec.ca/recherche/dataset/vmtl-geologie-des-depots-meubles/resource/0b56a4a4-212f-4438-9681-657d1c004a5b
+- https://www.donneesquebec.ca/recherche/dataset/vmtl-cuvettes-retention-eau-ruissellement/resource/1e558f13-6532-4bcc-95fc-457643eda6f9
 
 Débits cours d’eau et précipitations
 
-https://www.donneesquebec.ca/recherche/dataset/donnees-hydrometeorologiques/resource/94b6ebfd-309f-4500-a5a1-9604001dd24f
-https://www.donneesquebec.ca/recherche/dataset/donnees-hydrometeorologiques/resource/38d6d7d2-6dfc-46db-a395-f7c800b06805
+- https://www.donneesquebec.ca/recherche/dataset/donnees-hydrometeorologiques/resource/94b6ebfd-309f-4500-a5a1-9604001dd24f
+- https://www.donneesquebec.ca/recherche/dataset/donnees-hydrometeorologiques/resource/38d6d7d2-6dfc-46db-a395-f7c800b06805
 
 ## 📙RÉFÉRENCES 
 
 -	Cartographie du risque d’inondation en milieu urbain adaptée à la gestion de crise analyse préliminaire, Marion TANGUY (2012)
   
-https://numerique.banq.qc.ca/patrimoine/details/52327/2316328
+- https://numerique.banq.qc.ca/patrimoine/details/52327/2316328
 
--	Cartographie dynamique du risque d’inondations en milieu urbain, rapport de recherche R1428, Jimmy Poulin et al., Septembre 2012
+-	Cartographie dynamique du risque d’inondations en milieu urbain, rapport de recherche R1428, Jimmy Poulin et al., 
+  Septembre 2012
   
-  https://espace.inrs.ca/id/eprint/1661/1/R001428.pdf
+- https://espace.inrs.ca/id/eprint/1661/1/R001428.pdf
 
 -	https://www.ouranos.ca/sites/default/files/2024-01/trousse-information-questions-reponses-innondations.pdf
 
