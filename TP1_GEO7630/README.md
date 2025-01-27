@@ -17,14 +17,38 @@ Au Canada, ce phénomène demeure l’aléa naturel le plus commun et le plus co
 
 Située dans la province du Québec, la ville de Montréal n’est pas en marge quant à ce phénomène, au contraire elle a déjà été confrontée à des événements d'inondations importants, notamment en 2017 et 2019. Plusieurs actions sont menées par la municipalité ainsi que des organismes communautaires afin d’apporter des solutions durables pour une meilleure gestion des risques d'inondations dans la métropole. C’est dans cette dynamique que le présent projet s’inscrit, et entrevoit apporter sa contribution par le biais des outils SIG.
 
+## II.Problématique
 
-## 🎯I.1. Objectifs
+Les connaissances actuelles et les progrès technologiques offrent aux décideurs et aux populations de plus en plus d’outils (nombreux modèles hydrologiques et hydrauliques) et d’informations utiles (données géospatiales à haute résolution) pour optimiser la gestion et l’aménagement sécuritaire du territoire (Metzger R. 2003). La demande croissante pour des connaissances de pointe issues de la recherche scientifique s’explique notamment par une forte hausse démographique, laquelle s’accompagne par la densification des zones urbaines et périurbaines dont plusieurs sont situées au sein de zones inondables à des fréquences variées. Pourtant, il existe des outils pour aider à mieux comprendre, gérer et appréhender le risque d’inondation, notamment la cartographie des zones inondables qui est fréquemment utilisée pour assurer la gestion sécuritaire des villes et des municipalités situées dans les zones sensibles. 
+Les outils de cartographie du risque d’inondation en milieu urbain peuvent jouer un rôle très important dans l’optimisation des procédures de planification et d’implantation des mesures d’urgence visant à réduire les impacts d’une inondation en cours sur la population, mais sont encore peu développés et sont rarement opérationnels en phase de gestion de crise, Marion Tanguy, 2012.
+
+En outre, le contexte climatique actuel a des impacts indéniables sur le régime hydrologique. On note une modification de la fréquence, de l’intensité et du type de précipitations, ce qui se traduit par une variabilité accrue du régime des inondations. 
+Au cours des dernières années, plusieurs localités canadiennes dont la ville de Montréal ont été affectées sur une base récurrente. Cette ville est traversée par de nombreux cours d'eau (le fleuve Saint-Laurent, la rivière des Prairies, etc.), ce qui la rend encore plus vulnérable face aux risques d’inondations. Or les connaissances scientifiques quant aux causes et caractéristiques des inondations demeurent un défi, ce qui complique le rôle des décideurs, d’autant plus que la dimension humaine (vulnérabilité, résilience, adaptation, etc.) du risque d’inondation demeure encore peu documentée. Il va sans dire qu’il s’agit là d’un défi sérieux pour une saine gestion du territoire face aux inondations.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## 🎯III. Objectifs
 
 •	Identifier les zones vulnérables à l’inondation grâce aux données géospatiales.
 •	Élaborer des cartes des risques
 •	Création d’une application qui permettra d’informer le public sur les zones à risques d’inondation dans la ville
 
-## 📝I.2 Méthodologie
+## 📝IV. Méthodologie
 •	Collecte des données géospatiales (Topographie, hydrologie, climatologie, pédologie)
 •	Utilisation des logiciels SIG pour l’analyse spatiale et création de modèle hydraulique, ainsi que Arcgis online pour la visualisation
 •	Utilisation de logiciel ETL pour l’extraction des données et leur traitement
@@ -32,51 +56,41 @@ Située dans la province du Québec, la ville de Montréal n’est pas en marge 
 •	Analyse spatiale : 
 
 Analyse topographique
--	Création d’un modèle numérique de terrain (MNT) : Utiliser les données Lidar pour produire des cartes d'élévation détaillées.
--	Analyse des pentes et des bassins versants : Identifier les zones où l'eau pourrait s'écouler rapidement ou s'accumuler en cas de fortes précipitations.
--	Détection des zones de rétention : Localiser les dépressions naturelles où l’eau pourrait stagner et poser un risque d’inondation.
-
-Analyse hydrologique
--	Délimitation des bassins versants 
--	Modélisation des inondations : Créer des scénarios de montée des eaux en simulant des crues de différentes intensités.
--	Cartes de propagation de l’eau : Simuler les chemins d’écoulement de l’eau sur le terrain en fonction des conditions météorologiques.
+-	Création d’un modèle numérique de terrain (MNT)
+-	Analyse des pentes et des bassins versants 
+-	Détection des zones de rétention 
 
 Analyse de l’occupation du sol
--	Évaluation de l’imperméabilité : Croiser les données d’occupation du sol avec celles des zones imperméables (routes, bâtiments) pour estimer la capacité d'infiltration de l'eau dans différentes zones.
--	Évaluation des zones à enjeux : Localiser les zones résidentielles ou critiques (infrastructures essentielles) les plus exposées aux inondations.
+-	Évaluation de l’imperméabilité 
   
  Analyse climatique et scénarios prédictifs
--	Modélisation des scénarios de précipitations : Intégrer des données historiques pour évaluer les zones susceptibles d'être affectées en cas de précipitations extrêmes.
--	Simulation de montées des eaux : Utiliser des modèles prédictifs pour tester les impacts des crues soudaines 
-Analyse de la vulnérabilité et des risques
--	Cartes des zones à risque : Identifier et visualiser les zones combinant une forte probabilité d’inondation et une forte vulnérabilité (densité de population, infrastructures critiques, etc.).
-Création de produits cartographiques et tableaux de bord
--	Cartes interactives : Produire des cartes dynamiques avec des couches visualisant les zones inondées selon différents scénarios.
--	Tableaux de bord : Utiliser ArcGIS Dashboard pour intégrer les données spatiales et fournir un outil interactif permettant de visualiser les résultats
+-	Modélisation des scénarios de précipitations 
+-	Simulation de montées des eaux 
+-	Cartes des zones à risque
 
-## 💡II. Données Géospatiales
-II.1 Données Lidar 
+## 💡V. Données Géospatiales
+V.1 Données Lidar 
 
 Ces données fournissent le modèle numérique du terrain et le modèle numérique de surface.
 Le MNT peut permettre de simuler le déplacement de l'eau, les zones de rétention et d’écoulement, et donc d'évaluer les risques d'inondation.
 
-II.2 Données météorologiques et hydrologiques
+V.2 Données météorologiques et hydrologiques
 
 -	Réseaux hydrographiques : Localisation des rivières, cours d’eau, lacs et zones humides.
 -	Débits des cours d’eau : Données historiques des débits et niveaux d’eau pour estimer les scénarios de crues.
 -	Précipitations : Données météorologiques historiques
 
-II.3 Données sur la nature et l’occupation du sol
+V.3 Données sur la nature et l’occupation du sol
 
 -	Cartes d’occupation des sol (Zones résidentielles, commerciales, agricoles etc.)
 -	Données sur l’imperméabilisation
 -	Données pédologiques
   
-II.4 Données de télédétection
+V.4 Données de télédétection
 
 -	Imagerie thermique pour évaluer les zones où l’eau stagne (NDWI)
 
-## 📉III.	Intérêt du tableau de bord
+## 📉VI.	Intérêt du tableau de bord
 
 -	Gestion des risques et planification urbaine : Aider les autorités municipales à mieux comprendre où les inondations pourraient se produire afin de renforcer la sécurité des habitants, améliorer les infrastructures et planifier les zones de construction.
 -	Mise en place d’un système d’alerte des inondations (carte de vigilance des inondations) : Fournir des outils pour prédire les inondations futures, informer les citoyens et mettre en place des plans d'urgence (Possibilité de développer un algorithme qui permet de déclencher une alerte si la hauteur d’eau dépasse telle mm).
@@ -125,8 +139,10 @@ https://www.donneesquebec.ca/recherche/dataset/donnees-hydrometeorologiques/reso
 ## RÉFÉRENCES 
 
 -	Cartographie du risque d’inondation en milieu urbain adaptée à la gestion de crise analyse préliminaire, Marion TANGUY (2012)
-  
-https://www.google.com/search?client=firefox-b-d&q=-+Cartographie+du+risque+d%E2%80%99inondation+en+milieu+urbain+adapt%C3%A9e+%C3%A0+la+gestion+de+crise+analyse+pr%C3%A9liminaire%2C+Marion+TANGUY+%282012%29
+https://numerique.banq.qc.ca/patrimoine/details/52327/2316328
+
+-	Cartographie dynamique du risque d’inondations en milieu urbain, rapport de recherche R1428, Jimmy Poulin et al., Septembre 2012
+https://espace.inrs.ca/id/eprint/1661/1/R001428.pdf
 
 -	https://www.ouranos.ca/sites/default/files/2024-01/trousse-information-questions-reponses-innondations.pdf
 
