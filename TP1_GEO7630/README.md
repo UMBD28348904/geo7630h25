@@ -25,48 +25,31 @@ Les outils de cartographie du risque d’inondation en milieu urbain peuvent jou
 En outre, le contexte climatique actuel a des impacts indéniables sur le régime hydrologique. On note une modification de la fréquence, de l’intensité et du type de précipitations, ce qui se traduit par une variabilité accrue du régime des inondations. 
 Au cours des dernières années, plusieurs localités canadiennes dont la ville de Montréal ont été affectées sur une base récurrente. Cette ville est traversée par de nombreux cours d'eau (le fleuve Saint-Laurent, la rivière des Prairies, etc.), ce qui la rend encore plus vulnérable face aux risques d’inondations. Or les connaissances scientifiques quant aux causes et caractéristiques des inondations demeurent un défi, ce qui complique le rôle des décideurs, d’autant plus que la dimension humaine (vulnérabilité, résilience, adaptation, etc.) du risque d’inondation demeure encore peu documentée. Il va sans dire qu’il s’agit là d’un défi sérieux pour une saine gestion du territoire face aux inondations.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## 🎯III. Objectifs
 
-•	Identifier les zones vulnérables à l’inondation grâce aux données géospatiales.
-•	Élaborer des cartes des risques
-•	Création d’une application qui permettra d’informer le public sur les zones à risques d’inondation dans la ville
+- Identifier les zones vulnérables à l’inondation grâce aux données géospatiales.
+- Élaborer des cartes des risques
+- Création d’une application qui permettra d’informer le public sur les zones à risques d’inondation dans la ville
 
 ## 📝IV. Méthodologie
-•	Collecte des données géospatiales (Topographie, hydrologie, climatologie, pédologie)
-•	Utilisation des logiciels SIG pour l’analyse spatiale et création de modèle hydraulique, ainsi que Arcgis online pour la visualisation
-•	Utilisation de logiciel ETL pour l’extraction des données et leur traitement
+- Collecte des données géospatiales (Topographie, hydrologie, climatologie, pédologie)
+- Utilisation des logiciels SIG pour l’analyse spatiale et création de modèle hydraulique, ainsi que Arcgis online pour la visualisation
+- Utilisation de logiciel ETL pour l’extraction des données et leur traitement
 
-•	Analyse spatiale : 
+- Analyse spatiale : 
 
 Analyse topographique
--	Création d’un modèle numérique de terrain (MNT)
--	Analyse des pentes et des bassins versants 
--	Détection des zones de rétention 
+-Création d’un modèle numérique de terrain (MNT)
+-Analyse des pentes et des bassins versants 
+-Détection des zones de rétention 
 
 Analyse de l’occupation du sol
--	Évaluation de l’imperméabilité 
+-Évaluation de l’imperméabilité 
   
  Analyse climatique et scénarios prédictifs
--	Modélisation des scénarios de précipitations 
--	Simulation de montées des eaux 
--	Cartes des zones à risque
+-Modélisation des scénarios de précipitations 
+-Simulation de montées des eaux 
+-Cartes des zones à risque
 
 ## 💡V. Données Géospatiales
 V.1 Données Lidar 
@@ -139,9 +122,11 @@ https://www.donneesquebec.ca/recherche/dataset/donnees-hydrometeorologiques/reso
 ## RÉFÉRENCES 
 
 -	Cartographie du risque d’inondation en milieu urbain adaptée à la gestion de crise analyse préliminaire, Marion TANGUY (2012)
+  
 https://numerique.banq.qc.ca/patrimoine/details/52327/2316328
 
 -	Cartographie dynamique du risque d’inondations en milieu urbain, rapport de recherche R1428, Jimmy Poulin et al., Septembre 2012
+-	
 https://espace.inrs.ca/id/eprint/1661/1/R001428.pdf
 
 -	https://www.ouranos.ca/sites/default/files/2024-01/trousse-information-questions-reponses-innondations.pdf
