@@ -36,22 +36,10 @@ Au cours des dernières années, plusieurs localités canadiennes dont la ville 
 - Utilisation des logiciels SIG pour l’analyse spatiale et création de modèle hydraulique, ainsi que Arcgis online pour la visualisation
 - Utilisation de logiciel ETL pour l’extraction des données et leur traitement
 
-- Analyse spatiale : 
-
-Analyse topographique
--Création d’un modèle numérique de terrain (MNT)
--Analyse des pentes et des bassins versants 
--Détection des zones de rétention 
-
-Analyse de l’occupation du sol
--Évaluation de l’imperméabilité 
-  
- Analyse climatique et scénarios prédictifs
--Modélisation des scénarios de précipitations 
--Simulation de montées des eaux 
--Cartes des zones à risque
+- Analyse spatiale : Analyse topographique, Analyse de l’occupation du sol, Évaluation de l’imperméabilité, Analyse climatique et scénarios prédictifs, Modélisation des scénarios de précipitations et Simulation de montées des eaux dans  des zones à risque
 
 ## 💡V. Données Géospatiales
+
 V.1 Données Lidar 
 
 Ces données fournissent le modèle numérique du terrain et le modèle numérique de surface.
@@ -76,7 +64,9 @@ V.4 Données de télédétection
 ## 📉VI.	Intérêt du tableau de bord
 
 -	Gestion des risques et planification urbaine : Aider les autorités municipales à mieux comprendre où les inondations pourraient se produire afin de renforcer la sécurité des habitants, améliorer les infrastructures et planifier les zones de construction.
+  
 -	Mise en place d’un système d’alerte des inondations (carte de vigilance des inondations) : Fournir des outils pour prédire les inondations futures, informer les citoyens et mettre en place des plans d'urgence (Possibilité de développer un algorithme qui permet de déclencher une alerte si la hauteur d’eau dépasse telle mm).
+  
 -	Amélioration de la résilience urbaine : Concevoir des systèmes d'évacuation, de drainage ou des infrastructures résilientes pour minimiser les impacts des inondations sur les vies humaines et les infrastructures essentielles.
 
 
