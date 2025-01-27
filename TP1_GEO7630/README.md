@@ -124,6 +124,7 @@ https://espace.inrs.ca/id/eprint/1661/1/R001428.pdf
 -	https://unpointcinq.ca/sinspirer/geosapiens-un-logiciel-pour-prevenir-les-risques-dinondation/
 
 -	https://journals.openedition.org/ideas/7999
+-	https://dominic.tech/articles/inondations-au-quebec-une-nouvelle-application-web-pour-reperer-les-zones-a-risques.html
 
 
 
