@@ -80,11 +80,6 @@ Le MNT peut permettre de simuler le déplacement de l'eau, les zones de rétenti
 ## 📉VI.	Intérêt du tableau de bord
 
 -	Gestion des risques et planification urbaine : Aider les autorités municipales à mieux comprendre où les inondations pourraient se produire afin de renforcer la sécurité des habitants, améliorer les infrastructures et planifier les zones de construction.
-  
--	Mise en place d’un système d’alerte des inondations (carte de vigilance des inondations) : Fournir des outils pour prédire les inondations futures, informer les citoyens et mettre en place des plans d'urgence (Possibilité de développer un algorithme qui permet de déclencher une alerte si la hauteur d’eau dépasse telle mm).
-  
--	Amélioration de la résilience urbaine : Concevoir des systèmes d'évacuation, de drainage ou des infrastructures résilientes pour minimiser les impacts des inondations sur les vies humaines et les infrastructures essentielles.
-
 
 ## 📇Lien pour télécharger les données :
 
