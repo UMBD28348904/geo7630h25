@@ -33,16 +33,20 @@ Au cours des dernières années, plusieurs localités canadiennes dont la ville 
 
 ## 📝IV. Méthodologie
 
-•	Collecte des données géospatiales (Topographie, hydrologie, climatologie, pédologie)
-•	Utilisation des logiciels SIG pour l’analyse spatiale et spécifiquement Arcgis online pour la visualisation
-•	Utilisation de logiciel ETL pour l’extraction des données et leur traitement
-•	Simulation de l’écoulement des eaux à partir de modèles hydraulique et hydrologique existants (modélisation hydraulique et hydrologique) dans SIG
-•	Analyse spatiale : 
--	Analyse topographique 
--	Analyse de l’occupation du sol 
--	Évaluation de l’imperméabilité 
--	Identification des zones à risque
--	Simulation de montées des eaux
+- Collecte des données géospatiales (Topographie, hydrologie, climatologie, pédologie)
+
+- Utilisation des logiciels SIG pour l’analyse spatiale et spécifiquement Arcgis online pour la visualisation
+
+- Utilisation de logiciel ETL pour l’extraction des données et leur traitement
+
+- Simulation de l’écoulement des eaux à partir de modèles hydraulique et hydrologique existants (modélisation hydraulique et hydrologique) dans SIG
+
+- Analyse spatiale : 
+  -Analyse topographique 
+  -Analyse de l’occupation du sol 
+  -Évaluation de l’imperméabilité 
+  -Identification des zones à risque
+  -Simulation de montées des eaux
 
 
 ## 💡V. Données Géospatiales
