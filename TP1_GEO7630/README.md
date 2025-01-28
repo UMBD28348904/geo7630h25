@@ -81,6 +81,7 @@ Le MNT peut permettre de simuler le déplacement de l'eau, les zones de rétenti
 
 -	Gestion des risques et planification urbaine : Aider les autorités municipales à mieux comprendre où les inondations pourraient se produire afin de renforcer la sécurité des habitants, améliorer les infrastructures et planifier les zones de construction.
 
+![figure-c-13-fra](https://github.com/user-attachments/assets/ec92ffca-2241-4ba8-b79b-009295db6022)
 
 
 ## 📇Lien pour télécharger les données :
