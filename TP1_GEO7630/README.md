@@ -32,11 +32,18 @@ Au cours des dernières années, plusieurs localités canadiennes dont la ville 
 - Création d’une application qui permettra d’informer le public sur les zones à risques d’inondation dans la ville
 
 ## 📝IV. Méthodologie
-- Collecte des données géospatiales (Topographie, hydrologie, climatologie, pédologie)
-- Utilisation des logiciels SIG pour l’analyse spatiale et création de modèle hydraulique, ainsi que Arcgis online pour la visualisation
-- Utilisation de logiciel ETL pour l’extraction des données et leur traitement
 
-- Analyse spatiale : Analyse topographique, Analyse de l’occupation du sol, Évaluation de l’imperméabilité, Analyse climatique et scénarios prédictifs, Modélisation des scénarios de précipitations et Simulation de montées des eaux dans  des zones à risque
+•	Collecte des données géospatiales (Topographie, hydrologie, climatologie, pédologie)
+•	Utilisation des logiciels SIG pour l’analyse spatiale et spécifiquement Arcgis online pour la visualisation
+•	Utilisation de logiciel ETL pour l’extraction des données et leur traitement
+•	Simulation de l’écoulement des eaux à partir de modèles hydraulique et hydrologique existants (modélisation hydraulique et hydrologique) dans SIG
+•	Analyse spatiale : 
+-	Analyse topographique 
+-	Analyse de l’occupation du sol 
+-	Évaluation de l’imperméabilité 
+-	Identification des zones à risque
+-	Simulation de montées des eaux
+
 
 ## 💡V. Données Géospatiales
 
