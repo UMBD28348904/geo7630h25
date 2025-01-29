@@ -9,3 +9,7 @@ Ce deuxième laboratoire vise à approfondir nos compétences dans FME et QGIS. 
 #### 2. Lire les données sources dans FME
 ![Charger les données](https://github.com/UMBD28348904/geo7630h25/blob/geo7630h25/labo2/image/load_data.png)
 
+
+#### 3. Reprojection des données
+
+![Reprojection des données](https://github.com/UMBD28348904/geo7630h25/blob/geo7630h25/labo2/image/reprojection.png)
