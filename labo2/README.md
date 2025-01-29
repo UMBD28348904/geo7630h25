@@ -7,3 +7,5 @@ Ce deuxième laboratoire vise à approfondir nos compétences dans FME et QGIS. 
  - Quartier ( Polygône en Geojson) :[Polygone](https://donnees.montreal.ca/dataset/9797a946-9da8-41ec-8815-f6b276dec7e9/resource/6b313375-d9bc-4dc3-af8e-ceae3762ae6e/download/limites-administratives-agglomeration-nad83.geojson)
 
 #### 2. Lire les données sources dans FME
+![Charger les données](https://github.com/UMBD28348904/geo7630h25/blob/geo7630h25/labo2/image/load_data.png)
+
