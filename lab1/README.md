@@ -41,4 +41,12 @@ git config --global user.email "umba.dady_dimabanza@courrier.uqam.ca"
 ##### 2.2 Injecter la table dans votre schéma PostgreSQ
 ###### 2.2.1 Ajoutez un TRANSFORMER VertexCreator pour transformer les colonnes lat/long en géométrie.
 
+1. Ajout d'un transformer AttributeFilter pour enlever les valeurs nulles, en suite ajouter le transformer vertexCreatoir
+
+![image](https://github.com/user-attachments/assets/90575e94-ba33-46a2-a847-cc9a2a324143)
+
+###### 2.2.2 Injection de la table dans  Postgres
+
+
+
 
