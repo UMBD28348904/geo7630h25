@@ -27,7 +27,18 @@ git config --global user.name "UMBD28348904"
 - Pour l'adresse courielle
 git config --global user.email "umba.dady_dimabanza@courrier.uqam.ca"
 
-#### 2. Lancer FME
+#### 2. Lancer FME DESKTOP
 
 ![image](https://github.com/user-attachments/assets/99de0c2a-a45a-47af-b965-1299c46f647a)
+
+##### 2.1 Lire une adresse depuis un fichier CSV hébergé avec lat/long
+ Fichier d'entrée : ![Établissements alimentaires Mtl](https://donnees.montreal.ca/dataset/c1d65779-d3cb-44e8-af0a-b9f2c5f7766d/resource/28a4957d-732e-48f9-8adb-0624867d9bb0/download/businesses.csv)
+ 
+![image](https://github.com/user-attachments/assets/7d334539-61e8-4824-b237-fe64df147055)
+
+![image](https://github.com/user-attachments/assets/24cccd1a-0850-49a8-803e-d67537fb744c)
+
+##### 2.2 Injecter la table dans votre schéma PostgreSQ
+###### 2.2.1 Ajoutez un TRANSFORMER VertexCreator pour transformer les colonnes lat/long en géométrie.
+
 
