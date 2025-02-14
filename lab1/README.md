@@ -19,9 +19,6 @@
 ![image](https://github.com/user-attachments/assets/6ea31def-90a4-46ef-a56b-b53c0e314855)
 
 
-
-
-
 9. Si nous recevons le message d'erreur lors de commit et pousser alors nous devons configurer notre VSCODE  avec notre nom d'utilisateur et l'adresse courriel  avant de pouvoir envoyer les donnees sur GitHub.
 Appuyons le CTRL + J  et entrez la ligne ci-dessous pour configurer notre nom d'utilisateur et l'adresse couriel.
 
@@ -30,5 +27,7 @@ git config --global user.name "UMBD28348904"
 - Pour l'adresse courielle
 git config --global user.email "umba.dady_dimabanza@courrier.uqam.ca"
 
+#### 2. Lancer FME
 
+![image](https://github.com/user-attachments/assets/99de0c2a-a45a-47af-b965-1299c46f647a)
 
