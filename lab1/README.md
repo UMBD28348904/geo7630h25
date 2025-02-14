@@ -39,14 +39,42 @@ git config --global user.email "umba.dady_dimabanza@courrier.uqam.ca"
 ![image](https://github.com/user-attachments/assets/24cccd1a-0850-49a8-803e-d67537fb744c)
 
 ##### 2.2 Injecter la table dans votre schéma PostgreSQ
-###### 2.2.1 Ajoutez un TRANSFORMER VertexCreator pour transformer les colonnes lat/long en géométrie.
+##### 2.2.1 Ajoutez un TRANSFORMER VertexCreator pour transformer les colonnes lat/long en géométrie.
 
 1. Ajout d'un transformer AttributeFilter pour enlever les valeurs nulles, en suite ajouter le transformer vertexCreatoir
 
 ![image](https://github.com/user-attachments/assets/90575e94-ba33-46a2-a847-cc9a2a324143)
 
-###### 2.2.2 Injection de la table dans  Postgres
+##### 2.2.2 Injection de la table dans  Postgres
 
+1. Configuration de  PostGis
+   
+![image](https://github.com/user-attachments/assets/8aec74c3-79f8-47da-8726-9187899a6140)
+
+2. Vérifiez que votre table est bien présente.
+
+   Utilisons Dbeaver pour visualiser la table
+
+   ![image](https://github.com/user-attachments/assets/b28041c4-61de-44a8-9419-b077e9b18f82)
+
+
+#### 3.Visualiser la table dans QGIS
+
+1. Ouvrons Qgis et créons une nouvelle connexion POSTGIS
+
+![image](https://github.com/user-attachments/assets/d44ee36b-c326-474b-a73a-2317d7958629)
+
+2. Visualiser la table
+
+![image](https://github.com/user-attachments/assets/0081a328-5a27-471c-bad8-7aa34f4a6689)
+
+3.Donnez un style à votre couche de points.
+
+![image](https://github.com/user-attachments/assets/93631ab4-7009-4b5b-b367-63b61d9803f4)
+
+4. Sauvegardez votre style dans la base de données.
+
+![image](https://github.com/user-attachments/assets/812b329c-75fc-4835-87ba-041b54c804a5)
 
 
 
