@@ -68,11 +68,11 @@ git config --global user.email "umba.dady_dimabanza@courrier.uqam.ca"
 
 ![image](https://github.com/user-attachments/assets/0081a328-5a27-471c-bad8-7aa34f4a6689)
 
-3.Donnez un style à votre couche de points.
+3.Donnons un style à notre couche de points.
 
 ![image](https://github.com/user-attachments/assets/93631ab4-7009-4b5b-b367-63b61d9803f4)
 
-4. Sauvegardez votre style dans la base de données.
+4. Sauvegardons notre style dans la base de données
 
 ![image](https://github.com/user-attachments/assets/812b329c-75fc-4835-87ba-041b54c804a5)
 
