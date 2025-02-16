@@ -39,7 +39,7 @@ Créez 1 bookmark pour chacun des READERs (ctrl+b)
 
 ![image](https://github.com/user-attachments/assets/3f9e26a9-34fa-4cd4-9639-6af6aece06ab)
 
-## 1 ère partie - Intégration d’image aérienne standard
+# 1 ère partie - Intégration d’image aérienne standard
 
 ### Étape 1
 
@@ -59,4 +59,13 @@ Créez 1 bookmark pour chacun des READERs (ctrl+b)
 
 ![image](https://github.com/user-attachments/assets/7a5253c9-c0ec-4353-8c9d-4b2ebebb076a)
 
+![image](https://github.com/user-attachments/assets/f4d3ef6f-933f-4145-a81d-0b91155ddc40)
 
+
+### Étape 4
+
+Ajoutons un feature writer pour sauvegarde ces raster dans postGis Raster
+
+![image](https://github.com/user-attachments/assets/fa7c4169-618b-452d-aad2-976303209fed)
+
+### Étape 5  Visualisation QGIS
