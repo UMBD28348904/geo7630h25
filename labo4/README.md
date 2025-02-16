@@ -76,6 +76,9 @@ Ajoutons un feature writer pour sauvegarde ces rasters dans postGis Raster
 
 ![image](https://github.com/user-attachments/assets/66d1c8f4-0d81-42f3-9267-cafa0c9b5df2)
 
+### Image finale
+![image](https://github.com/user-attachments/assets/f5c88a33-e1c3-4b70-8b04-c0e4f464a672)
+
 # 2eme partie - Intégration de raster analytique - Ilôts de chaleur
 
 ### Étape 1
@@ -99,7 +102,6 @@ Ajoutons un feature writer pour sauvegarde ces rasters dans postGis Raster
 ![image](https://github.com/user-attachments/assets/d9e7646e-27d0-44fc-9593-296f2021d944)
 
 ![image](https://github.com/user-attachments/assets/c9f6d886-989a-44a6-8e86-3b05d9764744)
-
 
 ### Étape 5  Utilisons le transformer "RasterDiffuser" pour ameliorer la netteté de l'image , tout en accentuant les bords et les détails pour la rendre plus claire et plus définie.
 
@@ -134,6 +136,9 @@ Ajoutons un feature writer pour sauvegarde ces rasters dans postGis Raster
 
 ![image](https://github.com/user-attachments/assets/47b9c022-7330-4714-8a5e-72ae9efcfbc2)
 
+### Image finale
+
+![image](https://github.com/user-attachments/assets/1bae3a3b-a064-4d47-9c88-7283bd820b9d)
 
 # 3eme partie Intégration de raster (MNS)
 
@@ -158,4 +163,6 @@ Ajoutons un transformer AreaBuilder pour creer des polygônes (Zones) à partir 
 
 ![image](https://github.com/user-attachments/assets/e996eb60-11ef-45af-a96f-b693add4a21b)
 
+### Image finale
+![image](https://github.com/user-attachments/assets/0ec08a32-8eca-4e65-8a5c-a8619dfe15b5)
 
