@@ -150,4 +150,12 @@ Ajoutons le transformer  "Generalizer" pour lisser le contour "
 ### Étape3
 Ajoutons un transformer AreaBuilder pour creer des polygônes (Zones) à partir des lignes et écrivons le dans un PostGis
 
+![image](https://github.com/user-attachments/assets/d2b5deaf-c5f8-4fe1-9676-4297abcacf4b)
+
+![image](https://github.com/user-attachments/assets/77f150f9-b588-45a6-8d84-2ce42ffb8617)
+
+### Étape 4  Visualisation QGIS
+
+![image](https://github.com/user-attachments/assets/e996eb60-11ef-45af-a96f-b693add4a21b)
+
 
