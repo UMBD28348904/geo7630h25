@@ -115,15 +115,9 @@ Modèle numérique du terrain
 
 -	https://www.donneesquebec.ca/recherche/dataset/vmtl-modele-numerique-de-terrain-mnt/resource/a95c4054-8039-426b-ae55-73ae23bcb382
 
-Type de sols
 
-- https://www.donneesquebec.ca/recherche/dataset/vmtl-geologie-des-depots-meubles/resource/0b56a4a4-212f-4438-9681-657d1c004a5b
-- https://www.donneesquebec.ca/recherche/dataset/vmtl-cuvettes-retention-eau-ruissellement/resource/1e558f13-6532-4bcc-95fc-457643eda6f9
 
-Débits cours d’eau et précipitations
 
-- https://www.donneesquebec.ca/recherche/dataset/donnees-hydrometeorologiques/resource/94b6ebfd-309f-4500-a5a1-9604001dd24f
-- https://www.donneesquebec.ca/recherche/dataset/donnees-hydrometeorologiques/resource/38d6d7d2-6dfc-46db-a395-f7c800b06805
 
 ## 📙RÉFÉRENCES 
 
