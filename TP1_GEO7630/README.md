@@ -92,7 +92,9 @@ Le MNT peut permettre de simuler le déplacement de l'eau, les zones de rétenti
 
 Hydrographie Montréal  :  
 
-https://donnees.montreal.ca/dataset/ead1ac6f-f37c-4326-a9b9-4508d94bbc45/resource/73d4571c-fd7a-465a-aa19-05c3b24222cc/download/hydrographie-2020.zip
+- https://donnees.montreal.ca/dataset/ead1ac6f-f37c-4326-a9b9-4508d94bbc45/resource/73d4571c-fd7a-465a-aa19-05c3b24222cc/download/hydrographie-2020.zip
+- https://donnees.montreal.ca/dataset/c128aff5-325c-4599-ab66-1c9d0b3abc94/resource/a37e11d4-f0a3-46a7-8636-76754fad72b3/download/prmhh_courseau_fosses.zip
+
 
 Occupation du sol Montréal :
 
