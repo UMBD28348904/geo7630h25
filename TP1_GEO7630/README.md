@@ -96,7 +96,7 @@ Rivière :
 
 Lac et réservoir d’eau : 
 
-- https://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_lakes_north_america.zip
+https://donnees.montreal.ca/dataset/ead1ac6f-f37c-4326-a9b9-4508d94bbc45/resource/73d4571c-fd7a-465a-aa19-05c3b24222cc/download/hydrographie-2020.zip
 
 Occupation du sol Montréal :
 
