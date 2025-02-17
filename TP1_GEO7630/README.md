@@ -100,22 +100,26 @@ Occupation du sol Montréal :
 
 - https://donnees.montreal.ca/dataset/0eaea940-aafc-43bc-bab2-a87ac66a93ba/resource/c5dbe902-a587-4af5-ab97-d5182fa8ecba/download/affectationpu.zip
 
-Modèle numérique du terrain 
+Modèle numérique du terrain (Format GML)
 
--	https://www.donneesquebec.ca/recherche/dataset/vmtl-modele-numerique-de-terrain-mnt/resource/3b22f8f4-a5e3-4d12-9406-936b2e3a373f
+- https://donnees.montreal.ca/dataset/08a528e3-5bff-4bd8-b28d-85e584d5cc1d/resource/821302a3-1ac9-4cf4-8309-0e7bc07fb843/download/tin-2015-ahuntsic-cartierville.zip
+- https://donnees.montreal.ca/dataset/08a528e3-5bff-4bd8-b28d-85e584d5cc1d/resource/7857aec3-da55-418f-930f-77cfef07059c/download/tin-2015-anjou.zip
+- https://donnees.montreal.ca/dataset/08a528e3-5bff-4bd8-b28d-85e584d5cc1d/resource/a71c9a6b-abdc-4006-9b99-76d1ce7c2d91/download/tin-2015-cote-des-neiges-notre-dame-de-grace.zip
+- https://donnees.montreal.ca/dataset/08a528e3-5bff-4bd8-b28d-85e584d5cc1d/resource/54cb894b-551d-47ba-9cd5-0caf2a200ab1/download/tin-2015-lachine.zip
+- https://donnees.montreal.ca/dataset/08a528e3-5bff-4bd8-b28d-85e584d5cc1d/resource/47d5af84-e2c7-414f-bf17-517b7f47c423/download/tin-2015-lasalle.zip
+- https://donnees.montreal.ca/dataset/08a528e3-5bff-4bd8-b28d-85e584d5cc1d/resource/14ec49aa-7fad-4a9c-a3f0-3bf7322b8c1d/download/tin-2015-mercier-hochelaga-maisonneuve.zip
+- https://donnees.montreal.ca/dataset/08a528e3-5bff-4bd8-b28d-85e584d5cc1d/resource/07e341e3-dcd6-4ce0-9799-a45aaabc28d5/download/tin-2015-montreal-nord.zip
+- https://donnees.montreal.ca/dataset/08a528e3-5bff-4bd8-b28d-85e584d5cc1d/resource/b15dfc66-8bee-462c-b229-d0051ff3ce12/download/tin-2015-outremont.zip
+- https://donnees.montreal.ca/dataset/08a528e3-5bff-4bd8-b28d-85e584d5cc1d/resource/adbd7f57-0e9a-4876-9e91-9624a56edbf4/download/tin-2015-pierrefonds-roxboro.zip
+- https://donnees.montreal.ca/dataset/08a528e3-5bff-4bd8-b28d-85e584d5cc1d/resource/8ce62b82-9703-4891-b038-029fe47a2e2e/download/tin-2015-plateau-mont-royal.zip
+- https://donnees.montreal.ca/dataset/08a528e3-5bff-4bd8-b28d-85e584d5cc1d/resource/0a9733fd-3508-477d-9152-502523551182/download/tin-2015-riviere-des-prairies-pointe-aux-trembles.zip
+- https://donnees.montreal.ca/dataset/08a528e3-5bff-4bd8-b28d-85e584d5cc1d/resource/785aff49-933c-424b-8c44-72084d2a4cde/download/vcarto_basedtmmntmnt-2015citygml-2015-lidar-mkptin-2015-rosemont-la-petite-patrie.zip
+- https://donnees.montreal.ca/dataset/08a528e3-5bff-4bd8-b28d-85e584d5cc1d/resource/5c3f658c-d2d8-4c73-aa79-026ac5cfbccc/download/tin-2015-saint-laurent.zip
+- https://donnees.montreal.ca/dataset/08a528e3-5bff-4bd8-b28d-85e584d5cc1d/resource/5c3f658c-d2d8-4c73-aa79-026ac5cfbccc/download/tin-2015-saint-laurent.zip
+- https://donnees.montreal.ca/dataset/08a528e3-5bff-4bd8-b28d-85e584d5cc1d/resource/08b5026f-6f90-4e0e-9d80-d86ce97d665f/download/tin-2015-saint-leonard.zip
 
--	https://www.donneesquebec.ca/recherche/dataset/vmtl-modele-numerique-de-terrain-mnt/resource/821302a3-1ac9-4cf4-8309-0e7bc07fb843
 
 
--	https://www.donneesquebec.ca/recherche/dataset/vmtl-modele-numerique-de-terrain-mnt/resource/bf58c58f-5c44-4788-a021-89db151920f3
-
--	https://www.donneesquebec.ca/recherche/dataset/vmtl-modele-numerique-de-terrain-mnt/resource/7857aec3-da55-418f-930f-77cfef07059c
-
--	https://www.donneesquebec.ca/recherche/dataset/vmtl-modele-numerique-de-terrain-mnt/resource/b5c78919-a0bb-4032-8146-292c67f3ea72
-
--	https://www.donneesquebec.ca/recherche/dataset/vmtl-modele-numerique-de-terrain-mnt/resource/a71c9a6b-abdc-4006-9b99-76d1ce7c2d91
-
--	https://www.donneesquebec.ca/recherche/dataset/vmtl-modele-numerique-de-terrain-mnt/resource/a95c4054-8039-426b-ae55-73ae23bcb382
 
 
 
