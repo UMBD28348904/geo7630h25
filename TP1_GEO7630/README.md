@@ -103,27 +103,12 @@ Occupation du sol Montréal :
 Modèle numérique du terrain (Format GML)
 
 - https://donnees.montreal.ca/dataset/08a528e3-5bff-4bd8-b28d-85e584d5cc1d/resource/821302a3-1ac9-4cf4-8309-0e7bc07fb843/download/tin-2015-ahuntsic-cartierville.zip
-- https://donnees.montreal.ca/dataset/08a528e3-5bff-4bd8-b28d-85e584d5cc1d/resource/7857aec3-da55-418f-930f-77cfef07059c/download/tin-2015-anjou.zip
-- https://donnees.montreal.ca/dataset/08a528e3-5bff-4bd8-b28d-85e584d5cc1d/resource/a71c9a6b-abdc-4006-9b99-76d1ce7c2d91/download/tin-2015-cote-des-neiges-notre-dame-de-grace.zip
-- https://donnees.montreal.ca/dataset/08a528e3-5bff-4bd8-b28d-85e584d5cc1d/resource/54cb894b-551d-47ba-9cd5-0caf2a200ab1/download/tin-2015-lachine.zip
-- https://donnees.montreal.ca/dataset/08a528e3-5bff-4bd8-b28d-85e584d5cc1d/resource/47d5af84-e2c7-414f-bf17-517b7f47c423/download/tin-2015-lasalle.zip
 - https://donnees.montreal.ca/dataset/08a528e3-5bff-4bd8-b28d-85e584d5cc1d/resource/14ec49aa-7fad-4a9c-a3f0-3bf7322b8c1d/download/tin-2015-mercier-hochelaga-maisonneuve.zip
-- https://donnees.montreal.ca/dataset/08a528e3-5bff-4bd8-b28d-85e584d5cc1d/resource/07e341e3-dcd6-4ce0-9799-a45aaabc28d5/download/tin-2015-montreal-nord.zip
-- https://donnees.montreal.ca/dataset/08a528e3-5bff-4bd8-b28d-85e584d5cc1d/resource/b15dfc66-8bee-462c-b229-d0051ff3ce12/download/tin-2015-outremont.zip
 - https://donnees.montreal.ca/dataset/08a528e3-5bff-4bd8-b28d-85e584d5cc1d/resource/adbd7f57-0e9a-4876-9e91-9624a56edbf4/download/tin-2015-pierrefonds-roxboro.zip
-- https://donnees.montreal.ca/dataset/08a528e3-5bff-4bd8-b28d-85e584d5cc1d/resource/8ce62b82-9703-4891-b038-029fe47a2e2e/download/tin-2015-plateau-mont-royal.zip
 - https://donnees.montreal.ca/dataset/08a528e3-5bff-4bd8-b28d-85e584d5cc1d/resource/0a9733fd-3508-477d-9152-502523551182/download/tin-2015-riviere-des-prairies-pointe-aux-trembles.zip
-- https://donnees.montreal.ca/dataset/08a528e3-5bff-4bd8-b28d-85e584d5cc1d/resource/785aff49-933c-424b-8c44-72084d2a4cde/download/vcarto_basedtmmntmnt-2015citygml-2015-lidar-mkptin-2015-rosemont-la-petite-patrie.zip
-- https://donnees.montreal.ca/dataset/08a528e3-5bff-4bd8-b28d-85e584d5cc1d/resource/5c3f658c-d2d8-4c73-aa79-026ac5cfbccc/download/tin-2015-saint-laurent.zip
-- https://donnees.montreal.ca/dataset/08a528e3-5bff-4bd8-b28d-85e584d5cc1d/resource/5c3f658c-d2d8-4c73-aa79-026ac5cfbccc/download/tin-2015-saint-laurent.zip
-- https://donnees.montreal.ca/dataset/08a528e3-5bff-4bd8-b28d-85e584d5cc1d/resource/08b5026f-6f90-4e0e-9d80-d86ce97d665f/download/tin-2015-saint-leonard.zip
-
-
-
-
-
-
-
+- https://donnees.montreal.ca/dataset/08a528e3-5bff-4bd8-b28d-85e584d5cc1d/resource/50acb4b5-f0f2-4170-90fc-d51f7f2274e6/download/tin-2015-verdun.zip
+- https://donnees.montreal.ca/dataset/08a528e3-5bff-4bd8-b28d-85e584d5cc1d/resource/7ff01ab1-5b81-43ff-933a-e18402c8b5e6/download/tin-2015-ile-bizard-sainte-genevieve.zip
+- https://donnees.montreal.ca/dataset/08a528e3-5bff-4bd8-b28d-85e584d5cc1d/resource/022b28e5-9d4e-458e-af1f-e2efbc89b0bf/download/tin-2015-montreal-est.zip
 
 ## 📙RÉFÉRENCES 
 
