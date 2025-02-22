@@ -173,6 +173,8 @@ Lissage des polygones
 ### Etape 14
 Importation des couches "MNT_POSTGIS_RASTER" et "MNT_Polygone_POSGIS" dans notre base de données POSTGIS
 
+![image](https://github.com/user-attachments/assets/1f3d8578-6e33-4342-abe2-64bb07b435de)
+
 ![image](https://github.com/user-attachments/assets/cc5f7027-c7df-4a51-bd38-3272deb622a9)
 
 ### Processus
