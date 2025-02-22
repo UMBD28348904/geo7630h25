@@ -215,6 +215,11 @@ Validation de la géométrie
 
 ![image](https://github.com/user-attachments/assets/36518902-5e1d-41bc-8c15-0e9c44df55bd)
 
+## Processus
+
+![image](https://github.com/user-attachments/assets/3549c006-3ba1-4e00-a272-0a1804a45e36)
+
+
 
 # 5ème partie - Intégration couches des arrondissements (limites administratives)
 ### Etape 1
