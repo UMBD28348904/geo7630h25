@@ -33,3 +33,12 @@ Modèle numérique du terrain (Format GML)
 Arrondissement Montréal
 
 https://donnees.montreal.ca/dataset/9797a946-9da8-41ec-8815-f6b276dec7e9/resource/93385165-d849-418f-aaa3-0497ed9e4702/download/limites-administratives-agglomeration.zip
+
+## Chargement des données
+
+Nous utilisons AddReader dans FME pour l'ajout des differentes données
+![image](https://github.com/user-attachments/assets/18065cc3-edc4-4642-acc0-a660c8998ab4)
+
+
+
+
