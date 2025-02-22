@@ -56,6 +56,7 @@ Ajoutons un attribut de la surface de chaque polygône de l'occupation du sol
 
 ### Étape 3
 Filtrons les zones permeable et impermeable
+
 ![image](https://github.com/user-attachments/assets/24344491-ad12-4a0a-a6ac-9b2e57d01326)
 
 ### Étape 4
@@ -63,7 +64,19 @@ Importation des données dans la base  POSTGIS
 
 ![image](https://github.com/user-attachments/assets/fbc69ccc-d313-4149-8fa1-ea4ecb974bfc)
 
+### Processus
+![image](https://github.com/user-attachments/assets/802468ba-69bf-4600-bf24-13dc9da751f5)
 
+# 2ère partie - Intégration couche d'hydrographie ( Montréal)
 
+### Etape 1
+Reprojettons notre couche en EPSG : 3857
 
+![image](https://github.com/user-attachments/assets/c095979e-4d9a-4b9e-a214-548be00a0ac0)
+
+### Étape 2 
+Calcul des zones tampons ( Buffer)
+![image](https://github.com/user-attachments/assets/55c40c6f-d9d4-4819-a865-5145932dcc09)
+
+### Étape 3
 
