@@ -76,7 +76,33 @@ Reprojettons notre couche en EPSG : 3857
 
 ### Étape 2 
 Calcul des zones tampons ( Buffer)
+
 ![image](https://github.com/user-attachments/assets/55c40c6f-d9d4-4819-a865-5145932dcc09)
 
 ### Étape 3
+Regrouper les surfaces
+
+![image](https://github.com/user-attachments/assets/e96c01b1-e760-4ded-9ba7-c553469e315c)
+
+### Étape 4
+Gestion des attributs
+
+![image](https://github.com/user-attachments/assets/aeae85c0-9433-42ac-9342-4981267721e3)
+
+### Étape 5
+Création de buffer autour des cours d'eau
+
+![image](https://github.com/user-attachments/assets/ef9613e9-6375-447f-90f5-45baa1b3a65e)
+
+### Étape 6
+Processus
+
+![image](https://github.com/user-attachments/assets/786cd85a-3289-4084-9642-fd1b9eec6d75)
+
+
+# 3e`me partie - Intégration couche d'hydrographie ( Montréal)
+### Etape 1
+Création d'un nuage de points à partir des images MNT 
+
+![image](https://github.com/user-attachments/assets/9f2f732a-9ef8-4149-847c-fadbacb904fe)
 
