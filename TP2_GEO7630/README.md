@@ -37,7 +37,32 @@ https://donnees.montreal.ca/dataset/9797a946-9da8-41ec-8815-f6b276dec7e9/resourc
 ## Chargement des données
 
 Nous utilisons AddReader dans FME pour l'ajout des differentes données
+
 ![image](https://github.com/user-attachments/assets/18065cc3-edc4-4642-acc0-a660c8998ab4)
+
+# 1ère partie - Intégration couche d'affectation du sol ( Montréal)
+
+### Étape 1
+Reprojettons notre couche en EPSG : 3857
+
+![image](https://github.com/user-attachments/assets/df90b3cc-aa31-4fc3-b5f0-ecacfce042c4)
+
+![image](https://github.com/user-attachments/assets/e5974bf2-8c0c-4b08-aad3-a9c2af57bd83)
+
+### Étape 2
+Ajoutons un attribut de la surface de chaque polygône de l'occupation du sol
+![image](https://github.com/user-attachments/assets/dd280a20-35cd-4624-816c-f991b0dff2df)
+![image](https://github.com/user-attachments/assets/37cd9ccc-fafb-4379-ab2c-d16f2d7b8997)
+
+### Étape 3
+Filtrons les zones permeable et impermeable
+![image](https://github.com/user-attachments/assets/24344491-ad12-4a0a-a6ac-9b2e57d01326)
+
+### Étape 4
+Importation des données dans la base  POSTGIS
+
+![image](https://github.com/user-attachments/assets/fbc69ccc-d313-4149-8fa1-ea4ecb974bfc)
+
 
 
 
