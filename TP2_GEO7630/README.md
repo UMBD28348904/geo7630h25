@@ -94,15 +94,149 @@ Création de buffer autour des cours d'eau
 
 ![image](https://github.com/user-attachments/assets/ef9613e9-6375-447f-90f5-45baa1b3a65e)
 
-### Étape 6
-Processus
+### Processus
 
 ![image](https://github.com/user-attachments/assets/786cd85a-3289-4084-9642-fd1b9eec6d75)
 
 
-# 3e`me partie - Intégration couche d'hydrographie ( Montréal)
+# 3ème partie - Intégration couches MNT
 ### Etape 1
-Création d'un nuage de points à partir des images MNT 
+Création d'un nuage de points à partir des images MNT des arrondissements pour en faire une seule couche de points pour notre zone d'étude
 
 ![image](https://github.com/user-attachments/assets/9f2f732a-9ef8-4149-847c-fadbacb904fe)
+
+### Etape 2
+Utilisation du transformer PointCloudThinner pour réduire la taille du fichier
+
+![image](https://github.com/user-attachments/assets/d99ebd11-b611-47ad-8ce7-6dea0769f64c)
+
+### Etape 3
+Reprojection de la couche obtenue
+
+![image](https://github.com/user-attachments/assets/6bb096bb-206a-461f-aece-d83746b64d88)
+
+### Etape 4
+Transformation des nuages des points en couche des vecteurs ponctuels
+
+![image](https://github.com/user-attachments/assets/59b8ad5c-6fb5-4099-8a17-47886438f681)
+
+### Etape 5
+Génération du DEM_Raster
+
+![image](https://github.com/user-attachments/assets/addfbcca-51f9-4140-9bea-227ea49950cb)
+
+### Etape 6
+Extraction des metadonnée du Raster
+
+![image](https://github.com/user-attachments/assets/897150d5-4883-447f-9cb4-b44164a54b66)
+
+### Etape 7
+Supression des valeurs nulles
+
+![image](https://github.com/user-attachments/assets/9430aa44-bc29-4f78-aad5-ea723e3f106b)
+
+### Etape 8
+Calcul de la pente
+
+![image](https://github.com/user-attachments/assets/7a81f993-f1be-4b6c-a73c-a86439765466)
+
+### Etape 9
+Classification des pentes
+
+![image](https://github.com/user-attachments/assets/da0e6bbc-65d3-4b53-86cd-6c607c7e7c13)
+
+### Etape 10
+Transformation de la couche raster en polygone
+
+![image](https://github.com/user-attachments/assets/71c42c8c-173c-4535-b50d-52120f8a7d90)
+
+### Etape 10
+Gestion des attributs (Nous conservons les informations qui nous sont utiles pour la suite du processus)
+
+![image](https://github.com/user-attachments/assets/93942b1e-1868-4b69-a237-088339ef4e88)
+
+### Etape 11
+Création des surfaces
+
+![image](https://github.com/user-attachments/assets/e5d394b9-7dee-42fb-9c39-efdfd96108c2)
+
+### Etape 12
+Regroupement des surfaces
+
+![image](https://github.com/user-attachments/assets/0a1d03c0-31c6-4761-991d-4cb726d14cbe)
+
+### Etape 13
+Lissage des polygones
+
+![image](https://github.com/user-attachments/assets/ecec29e3-2b65-4264-9687-1577eca080fc)
+
+### Etape 14
+Importation des couches "MNT_POSTGIS_RASTER" et "MNT_Polygone_POSGIS" dans notre base de données POSTGIS
+
+![image](https://github.com/user-attachments/assets/cc5f7027-c7df-4a51-bd38-3272deb622a9)
+
+### Processus
+
+![image](https://github.com/user-attachments/assets/3d2b07e7-b45d-486b-85d8-6623d4c18748)
+
+# 4ème partie - Utilisation des couches de sortie des 3 premières parties
+### Etape 1
+Intersection des couches de sortie des 3 premières parties
+
+![image](https://github.com/user-attachments/assets/6c3f17b6-df79-4eee-ae26-8ecfd89cabdc)
+
+### Etape 2
+Gestion des attributs
+
+![image](https://github.com/user-attachments/assets/834b64bf-8c99-4e12-9d19-a39dde96ba5d)
+
+### Etape 3
+Elimination des données manquantes
+
+![image](https://github.com/user-attachments/assets/20b2446c-628a-4a4c-8bfa-ae8c9af81171)
+
+### Etape 4
+Extraction des données avec des valeurs de pentes
+
+![image](https://github.com/user-attachments/assets/0176f217-e3d2-49de-b624-c9539807119e)
+
+### Etape 5
+Filtrage des pentes de valeurs faibles (zones susceptibles de retenir les eaux)
+
+![image](https://github.com/user-attachments/assets/7165f917-f4b5-4465-b8ae-561f7e18bd55)
+
+### Etape 6
+Création de surfaces
+
+![image](https://github.com/user-attachments/assets/5ddf6a43-806a-4089-a69a-f81837ecd63f)
+
+### Etape 7
+Validation de la géométrie
+
+![image](https://github.com/user-attachments/assets/36518902-5e1d-41bc-8c15-0e9c44df55bd)
+
+
+# 5ème partie - Intégration couches des arrondissements (limites administratives)
+### Etape 1
+Reprojection de la couche des limites administratives de la ville de Montréal
+
+![image](https://github.com/user-attachments/assets/a299b151-c6be-4c15-a0ee-d51978d8a9e5)
+
+### Etape 2
+Gestion des attributs
+
+![image](https://github.com/user-attachments/assets/277530ee-4084-4ae1-9635-6097af73b837)
+
+### Etape 3
+Regroupement des surfaces
+
+![image](https://github.com/user-attachments/assets/99c7a9c0-2e9a-422e-b68d-a1374d2b6537)
+
+
+
+
+
+
+
+
 
