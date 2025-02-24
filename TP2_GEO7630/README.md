@@ -223,21 +223,6 @@ Validation de la géométrie
 
 
 
-# 5ème partie - Intégration couches des arrondissements (limites administratives)
-### Etape 1
-Reprojection de la couche des limites administratives de la ville de Montréal
-
-![image](https://github.com/user-attachments/assets/a299b151-c6be-4c15-a0ee-d51978d8a9e5)
-
-### Etape 2
-Gestion des attributs
-
-![image](https://github.com/user-attachments/assets/277530ee-4084-4ae1-9635-6097af73b837)
-
-### Etape 3
-Regroupement des surfaces
-
-![image](https://github.com/user-attachments/assets/99c7a9c0-2e9a-422e-b68d-a1374d2b6537)
 
 
 
