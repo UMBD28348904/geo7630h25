@@ -51,6 +51,7 @@ Reprojettons notre couche en EPSG : 3857
 
 ### Étape 2
 Ajoutons un attribut de la surface de chaque polygône de l'occupation du sol
+
 ![image](https://github.com/user-attachments/assets/dd280a20-35cd-4624-816c-f991b0dff2df)
 ![image](https://github.com/user-attachments/assets/37cd9ccc-fafb-4379-ab2c-d16f2d7b8997)
 
@@ -66,15 +67,12 @@ Dans notre configuration FME (Tester), certaines catégories de zones sont défi
 ###### Zones imperméables
 
 •	Catégories sélectionnées comme emplois, résidentiel, infrastructure sont majoritairement imperméables.
-•	Ces zones ont des surfaces en béton, asphalte ou bâtiments qui empêchent l’infiltration de l’eau, favorisant le ruissellement et les risques d’inondation.
+Ces zones ont des surfaces en béton, asphalte ou bâtiments qui empêchent l’infiltration de l’eau, favorisant le ruissellement et les risques d’inondation.
 
 ###### Zones perméables
 
 •	Catégories exclues (conservation, parc) sont perméables, car elles sont souvent végétalisées (espaces verts, forêts, zones naturelles).
 Ces zones permettent l’infiltration de l’eau, réduisant le ruissellement et favorisant la recharge des nappes phréatiques.
-Impact sur un projet d’inondation ?
-•	Augmenter les zones perméables (parcs, toitures végétalisées) aide à absorber l’eau.
-•	Réduire les zones imperméables ou intégrer des solutions comme des bassins de rétention limite les risques d’inondation.
 
 ![image](https://github.com/user-attachments/assets/24344491-ad12-4a0a-a6ac-9b2e57d01326)
 
@@ -110,7 +108,7 @@ Gestion des attributs
 ![image](https://github.com/user-attachments/assets/aeae85c0-9433-42ac-9342-4981267721e3)
 
 ### Étape 5
-Création de buffer autour des cours d'eau
+importation dans la BD POSTGIS
 
 ![image](https://github.com/user-attachments/assets/ef9613e9-6375-447f-90f5-45baa1b3a65e)
 
@@ -126,6 +124,7 @@ Création d'un nuage de points à partir des images MNT des arrondissements pour
 ![image](https://github.com/user-attachments/assets/9f2f732a-9ef8-4149-847c-fadbacb904fe)
 
 ### Etape 2
+
 Utilisation du transformer PointCloudThinner pour réduire la taille du fichier
 
 ![image](https://github.com/user-attachments/assets/d99ebd11-b611-47ad-8ce7-6dea0769f64c)
@@ -244,6 +243,9 @@ Création de surfaces
 Validation de la géométrie
 
 ![image](https://github.com/user-attachments/assets/36518902-5e1d-41bc-8c15-0e9c44df55bd)
+
+### Etape 8
+Importation dans la base de données POSTGIS
 
 ## Processus
 
