@@ -259,8 +259,9 @@ Importation dans la base de données POSTGIS
 ![image](https://github.com/user-attachments/assets/3549c006-3ba1-4e00-a272-0a1804a45e36)
 
 
+## Visualisation dans QGIS
 
-
+![image](https://github.com/user-attachments/assets/35cc63ea-d4cd-4547-9345-656d23f9be06)
 
 
 
