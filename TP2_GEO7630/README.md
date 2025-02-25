@@ -143,6 +143,14 @@ Calcul de la pente
 ### Etape 9
 Classification des pentes
 
+La classification de la manière suivante :
+
+- Classe 1 : Pente ≤ 5% → plate
+- Classe 2 : 5% < Pente ≤ 15% → Faible
+- Classe 3 : 15% < Pente ≤ 30% → moderée
+- Classe 4 : 30% < Pente ≤ 45% → forte
+- Classe 5 : Pente > 45% → Très forte
+
 ![image](https://github.com/user-attachments/assets/da0e6bbc-65d3-4b53-86cd-6c607c7e7c13)
 
 ### Etape 10
