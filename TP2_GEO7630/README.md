@@ -55,9 +55,29 @@ Ajoutons un attribut de la surface de chaque polygône de l'occupation du sol
 ![image](https://github.com/user-attachments/assets/37cd9ccc-fafb-4379-ab2c-d16f2d7b8997)
 
 ### Étape 3
-Filtrons les zones permeable et impermeable
+##### Filtrons les zones permeable et impermeable
+
+###### Zones perméables et imperméables selon la catégorie
+
+Dans notre configuration FME (Tester), certaines catégories de zones sont définies :
+- Catégories sélectionnées (emplois, résidentiel, religieux, mixte, infrastructure, institution).
+- Catégories exclues (activités diversifiées, conservation, parc).
+  
+###### Zones imperméables
+
+•	Catégories sélectionnées comme emplois, résidentiel, infrastructure sont majoritairement imperméables.
+•	Ces zones ont des surfaces en béton, asphalte ou bâtiments qui empêchent l’infiltration de l’eau, favorisant le ruissellement et les risques d’inondation.
+
+###### Zones perméables
+
+•	Catégories exclues (conservation, parc) sont perméables, car elles sont souvent végétalisées (espaces verts, forêts, zones naturelles).
+Ces zones permettent l’infiltration de l’eau, réduisant le ruissellement et favorisant la recharge des nappes phréatiques.
+Impact sur un projet d’inondation ?
+•	Augmenter les zones perméables (parcs, toitures végétalisées) aide à absorber l’eau.
+•	Réduire les zones imperméables ou intégrer des solutions comme des bassins de rétention limite les risques d’inondation.
 
 ![image](https://github.com/user-attachments/assets/24344491-ad12-4a0a-a6ac-9b2e57d01326)
+
 
 ### Étape 4
 Importation des données dans la base  POSTGIS
@@ -141,9 +161,9 @@ Calcul de la pente
 ![image](https://github.com/user-attachments/assets/7a81f993-f1be-4b6c-a73c-a86439765466)
 
 ### Etape 9
-Classification des pentes
+#### Classification des pentes
 
-La classification de la manière suivante :
+La classification de la pense se présente de la manière suivante :
 
 - Classe 1 : Pente ≤ 5% → plate
 - Classe 2 : 5% < Pente ≤ 15% → Faible
