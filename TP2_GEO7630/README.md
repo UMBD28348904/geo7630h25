@@ -9,6 +9,10 @@ Présentés par :
 
 # 📒 Sujet : Modélisation géospatiale des zones à risque d’inondation dans la ville de Montréal
 
+###### Schema du travail
+
+![Schema_ETL_TP2](https://github.com/user-attachments/assets/e21d97aa-e377-44e5-8684-b6767f4b4d0c)
+
 ## Données disponible
 Hydrographie Montréal  :  
 
@@ -246,6 +250,9 @@ Validation de la géométrie
 
 ### Etape 8
 Importation dans la base de données POSTGIS
+
+![image](https://github.com/user-attachments/assets/1df162fd-a3fe-4035-ab36-f22f5afc9b52)
+
 
 ## Processus
 
