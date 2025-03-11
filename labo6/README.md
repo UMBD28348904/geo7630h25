@@ -60,3 +60,13 @@ Puis ajoutez un AttributeManager pour faire le ménage et renommer les attributs
 
 1. Accéder à ArcGIS Online et créer un dossier GEO7630.
 Aller dans Contenu , puis Mes contenus et sur la gauche créer un Dossier
+
+![image](https://github.com/user-attachments/assets/1cc4ffcd-b0d4-484a-b465-e4da6e2b26e6)
+
+### Etape 8 Visualisation et exploitation des données dans ArcGIS Online
+
+
+
+
+
+
