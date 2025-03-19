@@ -136,7 +136,8 @@ Utilisation du transformer PointCloudThinner pour réduire la taille du fichier
 ### Etape 3
 Reprojection de la couche obtenue
 
-![image](https://github.com/user-attachments/assets/6bb096bb-206a-461f-aece-d83746b64d88)
+![image](https://github.com/user-attachments/assets/0b66e856-c06b-4a6f-843a-4acb070a41f3)
+
 
 ### Etape 4
 Transformation des nuages des points en couche des vecteurs ponctuels
