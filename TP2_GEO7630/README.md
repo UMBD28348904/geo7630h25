@@ -155,7 +155,7 @@ Extraction des metadonnée du Raster
 ![image](https://github.com/user-attachments/assets/897150d5-4883-447f-9cb4-b44164a54b66)
 
 ### Etape 7
-Supression des valeurs nulles
+Supression des valeurs nulles ( Pour éliminer les endroits où les pentes sont nulles)
 
 ![image](https://github.com/user-attachments/assets/9430aa44-bc29-4f78-aad5-ea723e3f106b)
 
@@ -246,7 +246,7 @@ Création de surfaces
 ![image](https://github.com/user-attachments/assets/5ddf6a43-806a-4089-a69a-f81837ecd63f)
 
 ### Etape 7
-Validation de la géométrie
+Validation de la géométrie ( Correction de la géometrie)
 
 ![image](https://github.com/user-attachments/assets/36518902-5e1d-41bc-8c15-0e9c44df55bd)
 
