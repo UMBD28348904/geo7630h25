@@ -211,7 +211,8 @@ Importation des couches "MNT_POSTGIS_RASTER" et "MNT_Polygone_POSGIS" dans notre
 
 ### Processus
 
-![image](https://github.com/user-attachments/assets/3d2b07e7-b45d-486b-85d8-6623d4c18748)
+![image](https://github.com/user-attachments/assets/abc85247-2f79-4019-aeed-37eb195ed2b9)
+
 
 # 4ème partie - Utilisation des couches de sortie des 3 premières parties
 ### Etape 1
