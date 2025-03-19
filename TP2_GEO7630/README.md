@@ -260,7 +260,8 @@ Importation dans la base de données POSTGIS
 
 ## 5ème partie Visualisation dans QGIS
 
-![image](https://github.com/user-attachments/assets/34ab8d2a-5b19-4012-8f72-e743c87563c0)
+![image](https://github.com/user-attachments/assets/ace375f8-b54e-44d0-81e8-399de7b96228)
+
 
 
 
