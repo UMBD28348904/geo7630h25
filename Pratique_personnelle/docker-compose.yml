@@ -5,5 +5,5 @@ services:
     ports:
       - 8000:80
     volumes:
-      - ./Pratique_personnelle/labo11/:/usr/share/nginx/html
+      - ./labo11/:/usr/share/nginx/html
     restart: always
