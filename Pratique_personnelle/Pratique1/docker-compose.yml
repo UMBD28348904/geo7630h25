@@ -5,6 +5,5 @@ services:
     ports:
       - 8000:80
     volumes:
-      - .Pratique_personnelle/Pratique1/html
+      - ./Pratique1/:/usr/share/nginx/html
     restart: always
-  
