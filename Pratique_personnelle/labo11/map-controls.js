@@ -15,6 +15,9 @@ var nav = new maplibregl.NavigationControl({
 });
 map.addControl(nav, 'top-right');
 
+//Echelle
+var scale = new maplibregl.ScaleControl({ unit: 'metric' });
+map.addControl(scale);
 
 // Contrôle de géolocalisation :
 var geolocateControl = new maplibregl.GeolocateControl({
@@ -22,3 +25,4 @@ var geolocateControl = new maplibregl.GeolocateControl({
     trackUserLocation: true
 });
 map.addControl(geolocateControl, 'bottom-right');
+
