@@ -1,31 +1,14 @@
 /* script.js */
 document.addEventListener('DOMContentLoaded', function() {
     // Initialisation de la carte MapLibre GL
-    const map = new maplibregl.Map({
-        container: 'map',
-        style: {
-            'version': 8,
-            'sources': {
-                'esri-light-gray': {
-                    'type': 'raster',
-                    'tiles': [
-                        'https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}'
-                    ],
-                    'tileSize': 256,
-                    'attribution': 'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ'
-                }
-            },
-            'layers': [
-                {
-                    'id': 'esri-light-gray',
-                    'type': 'raster',
-                    'source': 'esri-light-gray'
-                }
-            ]
-        },
-        center: [-73.55, 45.55], // Coordonnées de Montréal [longitude, latitude]
-        zoom: 9
-    });
+   // création de la carte Mapbox GL
+    var map = new maplibregl.Map({
+        container: 'map', // identifiant de l'élément HTML conteneur de la carte
+        style: 'https://api.maptiler.com/maps/dataviz/style.json?key=JhO9AmIPH59xnAn5GiSj', // URL du style de la carte
+        center: [-73.55, 45.55], // position centrale de la carte
+        zoom: 9, // niveau de zoom initial
+        hash: true // activation du hash pour la gestion de l'historique de la carte
+        });
 
 
     // Ajouter les contrôles de navigation (zoom, rotation)
