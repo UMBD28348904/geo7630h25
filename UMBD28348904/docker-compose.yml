@@ -1,6 +1,6 @@
 version: "3.4"
 services:
-  server-web:
+  tp3:
     image: nginx
     ports:
       - 9000:80
