@@ -5,5 +5,5 @@ services:
     ports:
       - 9000:80
     volumes:
-      - ./mise_en_oeuvre_sig:/usr/share/nginx/html:ro
+      - ./TP3:/usr/share/nginx/html:ro
     restart: always
