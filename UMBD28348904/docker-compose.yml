@@ -1,8 +1,9 @@
+version: "3.4"
 services:
-  web-labo10:
+  server-web:
     image: nginx
     ports:
       - 9000:80
     volumes:
-      - ./TP3_GEO7630:/usr/share/nginx/html:ro
+      - ./mise_en_oeuvre_sig:/usr/share/nginx/html:ro
     restart: always
