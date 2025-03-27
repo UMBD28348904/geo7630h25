@@ -6,3 +6,19 @@ var map = new maplibregl.Map({
     zoom: 9, // niveau de zoom initial
     hash: true // activation du hash pour la gestion de l'historique de la carte
 });
+
+var nav = new maplibregl.NavigationControl({
+    showCompass: true,
+    showZoom: true,
+    visualizePitch: true
+});
+map.addControl(nav, 'top-right');
+
+var geolocateControl = new maplibregl.GeolocateControl({
+    positionOptions: { enableHighAccuracy: true },
+    trackUserLocation: true
+});
+map.addControl(geolocateControl, 'bottom-right');
+
+var scale = new maplibregl.ScaleControl({ unit: 'metric' });
+map.addControl(scale);
