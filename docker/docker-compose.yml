@@ -5,5 +5,7 @@ services:
     ports:
       - 8000:80
     volumes:
-      - ./Pratique1/:/usr/share/nginx/html
+     - ./labo10:/usr/share/nginx/html:ro
     restart: always
+ 
+
