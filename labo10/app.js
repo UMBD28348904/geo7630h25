@@ -76,3 +76,20 @@ function loadWFS() {
         'before': 'qt_arbres_quartier' // This ensures that 'arrondissements' is placed beneath 'qt_arbres_quartier'
     });
 }
+
+var nav = new maplibregl.NavigationControl({
+    showCompass: true,
+    showZoom: true,
+    visualizePitch: true
+});
+map.addControl(nav, 'top-right');
+
+var geolocateControl = new maplibregl.GeolocateControl({
+    positionOptions: { enableHighAccuracy: true },
+    trackUserLocation: true
+});
+
+map.addControl(geolocateControl, 'bottom-right');
+
+var scale = new maplibregl.ScaleControl({ unit: 'metric' });
+map.addControl(scale);
