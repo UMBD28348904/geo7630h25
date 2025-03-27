@@ -7,3 +7,12 @@ services:
     volumes:
       - ./TP3:/usr/share/nginx/html:ro
     restart: always
+
+    
+  labo10-web:
+    image: nginx
+    ports:
+      - 8000:80
+    volumes:
+      - ./labo10:/usr/share/nginx/html:ro
+    restart: always
