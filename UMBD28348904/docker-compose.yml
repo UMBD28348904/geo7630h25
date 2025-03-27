@@ -1,0 +1,8 @@
+services:
+  web-labo10:
+    image: nginx
+    ports:
+      - 9000:80
+    volumes:
+      - ./TP3_GEO7630:/usr/share/nginx/html:ro
+    restart: always
