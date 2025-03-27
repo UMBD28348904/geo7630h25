@@ -1,4 +1,4 @@
-version: "3.4"
+
 services:
   tp3:
     image: nginx
@@ -8,11 +8,18 @@ services:
       - ./TP3:/usr/share/nginx/html:ro
     restart: always
 
-    
-  labo11-web:
+  labo10-web:
     image: nginx
     ports:
       - 8000:80
+    volumes:
+      - ./labo10:/usr/share/nginx/html:ro
+    restart: always
+
+  labo11-web:
+    image: nginx
+    ports:
+      - 7000:80
     volumes:
       - ./labo11:/usr/share/nginx/html:ro
     restart: always
