@@ -1,11 +1,8 @@
-version: "3.4"
 services:
   server-web:
     image: nginx
     ports:
       - 8000:80
     volumes:
-     - ./labo10:/usr/share/nginx/html:ro
+      - ./app:/usr/share/nginx/html:ro
     restart: always
- 
-
