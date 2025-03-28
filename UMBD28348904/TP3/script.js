@@ -67,20 +67,16 @@ document.addEventListener('DOMContentLoaded', function() {
         layout: {
           'text-field': ['get', 'NOM'], 
           'text-font': ['Open Sans Bold', 'Arial Unicode MS Bold'],
-          'text-size': 14,
+          'text-size': 12,
           'text-anchor': 'center'
         },
         paint: {
           'text-color': '#111',
           'text-halo-color': '#fff',
-          'text-halo-width': 2
+          'text-halo-width': 1.5
         }
       };
      
-
-
-
-
     var quartierLayer = {
         id: 'quartiers',
         type: 'fill',
