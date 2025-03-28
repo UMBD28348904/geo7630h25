@@ -1,38 +1,59 @@
-// mouse-controls.js
-
-map.on('mouseenter', 'commerces', (e) => {
-    // Change le style du curseur comme indicateur d'interface utilisateur uniquement pour la couche 'commerces'.
-    map.getCanvas().style.cursor = 'pointer';
+// 1. Survol : curseur pointeur sur les commerces
+map.on('mouseenter', 'commerces', () => {
+  map.getCanvas().style.cursor = 'pointer';
 });
 
 map.on('mouseleave', 'commerces', () => {
-    // Réinitialise le style du curseur lorsqu'il quitte la couche 'commerces'.
-    map.getCanvas().style.cursor = '';
+  map.getCanvas().style.cursor = '';
 });
 
+// 2. Fonction compteur
+function mettreAJourCompteur() {
+  const features = map.queryRenderedFeatures({ layers: ['commerces'] });
+  document.getElementById('compteur').innerText = `Commerces visibles : ${features.length}`;
+}
+
+// 3. Filtre + compteur dans le même bloc
+document.getElementById('filtreType').addEventListener('change', function () {
+  const type = this.value;
+
+  if (type === 'Tous') {
+    map.setFilter('commerces', ['==', ['get', 'statut'], 'Ouvert']);
+  } else {
+    map.setFilter('commerces', ['all',
+      ['==', ['get', 'statut'], 'Ouvert'],
+      ['==', ['get', 'type'], type]
+    ]);
+  }
+
+  // 🔁 Mise à jour du compteur après filtrage
+  mettreAJourCompteur();
+});
+
+// 4. Mise à jour du compteur après déplacement/zoom
+map.on('moveend', mettreAJourCompteur);
+
+// 5. Clic sur un commerce = popup + zoom + panneau latéral
 map.on('click', 'commerces', (e) => {
-    // Vérifie si des entités ont été cliquées dans la couche 'commerces'
-    if (e.features.length > 0) {
-        const coordinates = e.features[0].geometry.coordinates.slice();
-        const properties = e.features[0].properties;
+  var feature = e.features[0];
+  var props = feature.properties;
+  var coords = feature.geometry.coordinates;
 
-        // Crée le contenu HTML pour la popup du commerce (nom et type uniquement)
-        const popupHTML = `<b>${properties.name}</b><br>Type: ${properties.type}`;
+  new maplibregl.Popup()
+    .setLngLat(coords)
+    .setHTML(`<strong>${props.name}</strong><br>Type : ${props.type}`)
+    .addTo(map);
 
-        // S'assure que si la carte est dézoomée de telle sorte que plusieurs
-        // copies de l'entité sont visibles, la popup apparaît
-        // au-dessus de la copie pointée.
-        while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
-            coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
-        }
+  map.flyTo({
+    center: coords,
+    zoom: 15,
+    speed: 0.8
+  });
 
-        new mapboxgl.Popup()
-            .setLngLat(coordinates)
-            .setHTML(popupHTML)
-            .addTo(map);
-    }
+  // 🧾 Mise à jour du panneau latéral
+  document.getElementById('sidebar').innerHTML = `
+    <h3>${props.name}</h3>
+    <p><strong>Type :</strong> ${props.type}</p>
+    <p><strong>Statut :</strong> ${props.statut}</p>
+  `;
 });
-
-// Pas besoin d'ajouter d'autres écouteurs d'événements pour le moment,
-// car la demande était de se concentrer uniquement sur la couche 'commerces'
-// pour afficher le nom et le type.
