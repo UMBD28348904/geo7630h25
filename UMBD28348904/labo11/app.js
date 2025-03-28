@@ -6,4 +6,5 @@
 
         map.addSource('arrondissementsSource', arrondissementsSource);
         map.addLayer(arrondissementsLayer);
+        map.addLayer(arrondissementsLabelsLayer)
     });

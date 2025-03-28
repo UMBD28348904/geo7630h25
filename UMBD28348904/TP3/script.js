@@ -59,6 +59,28 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     };
 
+      //Labels des arrondissements
+      var arrondissementsLabelsLayer = {
+        id: 'arrondissements-labels',
+        type: 'symbol',
+        source: 'arrondissementsSource',
+        layout: {
+          'text-field': ['get', 'NOM'], 
+          'text-font': ['Open Sans Bold', 'Arial Unicode MS Bold'],
+          'text-size': 14,
+          'text-anchor': 'center'
+        },
+        paint: {
+          'text-color': '#111',
+          'text-halo-color': '#fff',
+          'text-halo-width': 2
+        }
+      };
+     
+
+
+
+
     var quartierLayer = {
         id: 'quartiers',
         type: 'fill',
@@ -78,6 +100,7 @@ document.addEventListener('DOMContentLoaded', function() {
     map.on('load', function () {
         map.addSource('arrondissementsSource', arrondissementsSource);
         map.addLayer(arrondissementsLayer);
+        map.addLayer(arrondissementsLabelsLayer)
 
         map.addSource('quartiersSource', quartiersSource);
         map.addLayer(quartierLayer);

@@ -35,7 +35,8 @@ var commercesLayer = {
         ],
         'circle-stroke-color': '#fff',
         'circle-stroke-width': 1
-      }  
+      },  
+      filter: ['==', ['get', 'statut'], 'Ouvert']
   };
 
   var arrondissementsSource = {
@@ -55,3 +56,21 @@ var commercesLayer = {
     }
   };
   
+    //Labels des arrondissements
+    var arrondissementsLabelsLayer = {
+      id: 'arrondissements-labels',
+      type: 'symbol',
+      source: 'arrondissementsSource',
+      layout: {
+        'text-field': ['get', 'NOM'], 
+        'text-font': ['Open Sans Bold', 'Arial Unicode MS Bold'],
+        'text-size': 14,
+        'text-anchor': 'center'
+      },
+      paint: {
+        'text-color': '#111',
+        'text-halo-color': '#fff',
+        'text-halo-width': 2
+      }
+    };
+   
