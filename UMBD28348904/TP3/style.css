@@ -36,7 +36,7 @@ body {
 }
 
 .main-title-container { /* Container du fond bleu */
-    background-color: #002D62;
+    background-color: #f10909;
     display: flex; /* Active le modèle de boîte flexible */
     justify-content: center; /* Centre horizontalement le contenu */
     align-items: center; /* Centre verticalement le contenu */
