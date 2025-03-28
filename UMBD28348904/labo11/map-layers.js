@@ -38,4 +38,20 @@ var commercesLayer = {
       }  
   };
 
+  var arrondissementsSource = {
+    type: 'geojson',
+    data: 'https://donnees.montreal.ca/dataset/9797a946-9da8-41ec-8815-f6b276dec7e9/resource/e18bfd07-edc8-4ce8-8a5a-3b617662a794/download/limites-administratives-agglomeration.geojson'
+  };
+ 
+  // Polygones des arrondissements
+  var arrondissementsLayer = {
+    id: 'arrondissements',
+    type: 'fill',
+    source: 'arrondissementsSource',
+    paint: {
+      'fill-color': '#ccc',
+      'fill-opacity': 0.3,
+      'fill-outline-color': '#000'
+    }
+  };
   

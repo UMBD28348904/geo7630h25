@@ -4,6 +4,6 @@
         map.addSource('commercesSource', commercesSource);
         map.addLayer(commercesLayer);
 
-        //map.addSource('quartiersSource', quartiersSource);
-        //map.addLayer(quartierLayer);
+        map.addSource('arrondissementsSource', arrondissementsSource);
+        map.addLayer(arrondissementsLayer);
     });
