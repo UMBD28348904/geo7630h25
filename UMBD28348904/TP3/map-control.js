@@ -4,7 +4,7 @@
         container: 'map', // identifiant de l'élément HTML conteneur de la carte
         style: 'https://api.maptiler.com/maps/dataviz/style.json?key=JhO9AmIPH59xnAn5GiSj', // URL du style de la carte
         center: [-73.55, 45.55], // position centrale de la carte
-        zoom: 9, // niveau de zoom initial
+        zoom: 10, // niveau de zoom initial
         hash: true // activation du hash pour la gestion de l'historique de la carte
         });
 
@@ -35,6 +35,10 @@
         data: 'https://donnees.montreal.ca/dataset/9797a946-9da8-41ec-8815-f6b276dec7e9/resource/e18bfd07-edc8-4ce8-8a5a-3b617662a794/download/limites-administratives-agglomeration.geojson'
     };
 
+
+
+
+
     // Définition des couches
 
     var arrondissementsLayer = {
@@ -50,6 +54,9 @@
             'visibility': 'visible' // Affiché par défaut
         }
     };
+
+
+  
 
 
       //Definitions de Label

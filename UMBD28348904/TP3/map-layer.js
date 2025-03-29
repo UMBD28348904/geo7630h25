@@ -5,4 +5,6 @@ map.on('load', function () {
     map.addLayer(arrondissementsLayer);
     map.addLayer(arrondissementsLabelsLayer);
 
+
 });
+
