@@ -5,7 +5,7 @@ map.on('load', function () {
     map.addLayer(arrondissementsLayer);
     map.addLayer(arrondissementsLabelsLayer);
 
-    map.addSource('commercesSource', commercesSource);
-    map.addLayer(commercesLayer);
+    map.addSource('vulnerabiliteSource', vulnerabiliteSource);
+    map.addLayer(vulnerabiliteLayer);
 });
 

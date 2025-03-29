@@ -35,12 +35,11 @@
         data: 'https://donnees.montreal.ca/dataset/9797a946-9da8-41ec-8815-f6b276dec7e9/resource/e18bfd07-edc8-4ce8-8a5a-3b617662a794/download/limites-administratives-agglomeration.geojson'
     };
 
-    var commercesSource = {
+    var vulnerabiliteSource = {
         type: 'geojson',
-        data: 'https://donnees.montreal.ca/dataset/c1d65779-d3cb-44e8-af0a-b9f2c5f7766d/resource/ece728c7-6f2d-4a51-a36d-21cd70e0ddc7/download/businesses.geojson'
+        data: 'https://donnees.montreal.ca/dataset/3603f75a-1963-4130-9fc5-ab3e7272211a/resource/01afc867-11f2-4a3b-b77e-d5e9ee853c87/download/vulnerabilite-crues-polygones-simplifies-2022.geojson'
       };
 
-   
 
     // Définition des couches
 
@@ -58,47 +57,24 @@
         }
     };
 
+
     // Définition de la couche avec symbologie par type de commerce
-var commercesLayer = {
-    id: 'commerces',
-    type: 'circle',
-    source: 'commercesSource',
+    var vulnerabiliteLayer = {
+        id: 'vulnerabilite',
+        type: 'fill',
+        source: 'vulnerabiliteSource',
 
-    paint: {
-        // Rayon variable selon le type
-        'circle-radius': [
-          'match',
-          ['get', 'type'],
-          'Épicerie', 5,
-          'Pâtisserie/Boulangerie', 7,
-          'Distributrice automatique', 4,
-          'Pharmacie', 6,
-          'Restaurant', 5,
-          3 // taille par défaut
-        ],
-        // Couleur variable selon le type
-        'circle-color': [
-          'match',
-          ['get', 'type'],
-          'Épicerie', 'orange',
-          'Pâtisserie/Boulangerie', 'yellow',
-          'Distributrice automatique', 'blue',
-          'Pharmacie', 'green',
-          'Restaurant', 'purple',
-          'grey' // couleur par défaut
-        ],
-        'circle-stroke-color': '#fff',
-        'circle-stroke-width': 1
-      },  
-      filter: ['==', ['get', 'statut'], 'Ouvert']
-  };
-
+        paint: {
+            'fill-color': '#ccc',
+            'fill-opacity': 0.5,
+            'fill-outline-color': '#000'
+        },
+        layout: {
+            'visibility': 'visible' // Affiché par défaut
+        }
 
     
-
-
-  
-
+  };
 
       //Definitions de Label
 
