@@ -67,7 +67,18 @@
         paint: {
             'fill-color': '#ccc',
             'fill-opacity': 0.5,
-            'fill-outline-color': '#000'
+            'fill-outline-color': '#000',
+
+            'fill-color': [
+            'match',
+                ['get', 'cruesCat'],
+                'Élevée', 'orange',
+                'Majeure', 'yellow',
+                'Mineure', 'blue',
+                'Modéré', 'green',
+                'Non significative', 'purple',
+
+                ],
         },
         layout: {
             'visibility': 'visible' // Affiché par défaut
