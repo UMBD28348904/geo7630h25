@@ -35,9 +35,10 @@
         data: 'https://donnees.montreal.ca/dataset/9797a946-9da8-41ec-8815-f6b276dec7e9/resource/e18bfd07-edc8-4ce8-8a5a-3b617662a794/download/limites-administratives-agglomeration.geojson'
     };
 
-
-
-
+    var vulnerabiliteSource = {
+        type: 'geojson',
+        data: 'https://donnees.montreal.ca/fr/dataset/c747ec13-cb20-4fca-b4b1-a316a13a570a/resource/bc77caec-c5ab-4260-ba22-587730ca4378/download/plantation-priorites-polygones-simplifies.geojson'
+    };
 
     // Définition des couches
 
@@ -55,7 +56,19 @@
         }
     };
 
-
+    var vulnerabiliteLayer = {
+        id: 'vulnerbialite',
+        type: 'fill',
+        source: 'vulnerabiliteSource',
+        paint: {
+            'fill-color': '#ccc',
+            'fill-opacity': 0.5,
+            'fill-outline-color': '#000'
+        },
+        layout: {
+            'visibility': 'visible' // Affiché par défaut
+        }
+    };
   
 
 
