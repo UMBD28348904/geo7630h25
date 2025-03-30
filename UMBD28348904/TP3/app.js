@@ -3,7 +3,7 @@ var map = new maplibregl.Map({
     container: 'map', // ID de l'élément HTML où la carte sera affichée
     style: 'https://api.maptiler.com/maps/dataviz/style.json?key=JhO9AmIPH59xnAn5GiSj', // Style de la carte (MapTiler)
     center: [-73.55, 45.55], // Centre initial de la carte (longitude, latitude)
-    zoom: 9, // Niveau de zoom initial
+    zoom: 8, // Niveau de zoom initial
     hash: true // Active la synchronisation de l'URL avec l'état de la carte (centre, zoom)
 });
 
