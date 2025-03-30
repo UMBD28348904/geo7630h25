@@ -21,26 +21,27 @@
 </head>
 <body>
 
-    <div class = "main-title-container"><h1>ZONES VULNERABLE À L'INONDATION | MONTRÉAL </h1></div> 
+    <div class = "main-title-container"><h1>ZONES VULNERABLE À L'INONDATION | MONTRÉAL </h1></div>
 
-    
+    <!-- Ajout de la légende dans la sidebar, au sein de la partie .sidebar-content -->
 
+    <div class="legend-container mb-3">
+    <h4>Légende de la vulnérabilité</h4>
+    <div id="legend" class="legend-container"></div>
+    </div>
+ 
     
-        
     <div class="container-fluid">
-            
-
+     
         <div class="row h-100">
+        
             <div class="col-md-9 p-0">
-                 <!-- Un bouton pour charger les données -->
-
+                 <!-- Integration de la carte -->
                 <div id="map" style="width: 100%; height:90%;"></div>
-
             </div>
             <div class="col-md-3 bg-light p-4">
                 <div class="sidebar-header mb-3">
                     <h2>Vulnerabilté</h2>
-
                 </div>
                 <div class="sidebar-content">
                     <div class="base-boundary-data mb-3">

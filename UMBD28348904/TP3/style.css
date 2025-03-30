@@ -10,10 +10,6 @@ body {
     height: 100vh;
 }
 
-#map {
-    /* Styles will be applied inline in the HTML */
-}
-
 .sidebar-header h2 {
     font-size: 1.5rem;
     margin-bottom: 10px;
@@ -55,4 +51,51 @@ body {
 }
 
 
- 
+
+
+/* style.css */
+
+/* Positionner la légende dans le coin inférieur droit */
+.legend-container {
+    position: absolute; /* Positionnement absolu pour la placer sur la carte */
+    bottom: 50px; /* Distance du bas de la carte */
+    right: 280px;  /* Distance du bord droit de la carte */
+    background-color: white; /* Fond blanc pour la lisibilité */
+    border-radius: 5px; /* Coins arrondis */
+    padding: 10px; /* Espacement autour du contenu */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Optionnel : ajout d'une ombre pour rendre la légende plus visible */
+    z-index: 1; /* S'assurer que la légende soit au-dessus de la carte */
+    max-width: 200px; /* Limiter la largeur pour ne pas qu'elle prenne trop de place */
+}
+
+
+
+/* Légende de la vulnérabilité */
+.legend-container h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#legend {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.legend-color {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.legend-label {
+    font-size: 1rem;
+    color: #333;
+}
