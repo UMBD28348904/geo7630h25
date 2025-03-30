@@ -64,20 +64,31 @@ var arrondissementsLabelsLayer = {
     }
 };
 
-// Définition de la couche vulnérabilité
 var vulnerabiliteLayer = {
     id: 'vulnerabilite',
     type: 'fill',
     source: 'vulnerabiliteSource',
     paint: {
-        'fill-color': '#f00', // Rouge pour mettre en évidence la vulnérabilité
-        'fill-opacity': 0.5,
-        'fill-outline-color': '#000'
-    },
+        // Couleur variable selon le type de crue
+        'fill-color': [
+          'match',
+          ['get', 'CruesCat'],
+          'Non significative', 'orange',
+          'Mineure', 'yellow',
+          'Modéré', 'blue',
+          'Élevée', 'green',
+          'Majeure', 'purple',
+          'S.O.', '#ec7063 ',
+          'grey' // couleur par défaut
+        ],
+        'fill-outline-color': '#fff', // Correction de fill-stroke-color (propriété inexistante)
+        'fill-opacity': 0.7 // Ajout d'une opacité pour une meilleure visibilité
+    }, 
     layout: {
         'visibility': 'visible' // Affiché par défaut
     }
 };
+
 
 // Ajout des sources et des couches à la carte une fois qu'elle est chargée
 map.on('load', function () {
