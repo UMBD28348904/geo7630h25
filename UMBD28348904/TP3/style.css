@@ -1,9 +1,8 @@
-/* style.css */
 body {
     font-family: sans-serif;
     margin: 0;
     padding: 0;
-    overflow: hidden; /* Prevent global scrollbar */
+    overflow: hidden;
 }
 
 .container-fluid {
@@ -15,7 +14,7 @@ body {
     margin-bottom: 10px;
     border-bottom: 1px solid #ccc;
     padding-bottom: 10px;
-    color:#002D62;
+    color: #002D62;
     font-weight: bold;
 }
 
@@ -31,42 +30,34 @@ body {
     padding-bottom: 0;
 }
 
-.main-title-container { /* Container du fond bleu */
-    background-color: #1962b4 ;
-    display: flex; /* Active le modèle de boîte flexible */
-    justify-content: center; /* Centre horizontalement le contenu */
-    align-items: center; /* Centre verticalement le contenu */
-    padding-top: 25px; /* Ajoute du rembourrage en haut */
-    padding-bottom: 15px; /* Ajoute du rembourrage en bas */
-    margin-top: 0;
-    margin-bottom: 0;
+.main-title-container {
+    background-color: #1962b4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 15px;
+    margin: 0;
 }
 
-.main-title-container h1 { /* Le titre à l'intérieur */
+.main-title-container h1 {
     font-size: 1.5rem;
     color: white;
-
-    margin: 0; /* Supprime les marges par défaut du h1 pour un centrage précis */
-    padding: 0; /* Supprime les rembourrages par défaut du h1 */
+    margin: 0;
+    padding: 0;
 }
-
-
-
-
-/* Positionner la légende dans le coin inférieur droit */
 
 .legend-container {
-    position: absolute; /* Positionnement absolu pour la placer sur la carte */
-    bottom: 50px; /* Distance du bas de la carte */
-    right: 280px;  /* Distance du bord droit de la carte */
-    background-color: white; /* Fond blanc pour la lisibilité */
-    border-radius: 5px; /* Coins arrondis */
-    padding: 10px; /* Espacement autour du contenu */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Optionnel : ajout d'une ombre pour rendre la légende plus visible */
-    z-index: 1; /* S'assurer que la légende soit au-dessus de la carte */
-    max-width: 200px; /* Limiter la largeur pour ne pas qu'elle prenne trop de place */
+    position: absolute;
+    bottom: 50px;
+    right: 280px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    max-width: 200px;
 }
-
 
 #legend {
     display: flex;
@@ -78,15 +69,18 @@ body {
     display: flex;
     align-items: center;
     margin-bottom: 5px;
+    cursor: pointer;
 }
 
+.legend-item:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
 
 .legend-color {
     width: 20px;
     height: 20px;
     margin-right: 10px;
 }
-
 
 .legend-label {
     font-size: 1rem;
