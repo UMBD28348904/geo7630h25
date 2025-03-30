@@ -53,9 +53,8 @@ body {
 
 
 
-/* style.css */
-
 /* Positionner la légende dans le coin inférieur droit */
+
 .legend-container {
     position: absolute; /* Positionnement absolu pour la placer sur la carte */
     bottom: 50px; /* Distance du bas de la carte */
@@ -74,7 +73,8 @@ body {
 .legend-container h4 {
     font-size: 1.2rem;
     margin-bottom: 20px;
-    font-weight: bold;    
+    font-weight: bold;
+    height: 40%;    
 }
 
 
