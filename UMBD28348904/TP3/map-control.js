@@ -21,27 +21,16 @@
     var scale = new maplibregl.ScaleControl({ unit: 'metric' });
         map.addControl(scale);
 
-    // Récupération de la liste déroulante
-    const inondationdropdown = document.getElementById('inondation-dropdown');
+        
+    // Couches arrondissement
 
-    // Exemple d'activation de la liste déroulante (à adapter selon votre logique)
-    setTimeout(() => {
-        inondationdropdown.disabled = false;
-    }, 1000); // Simule un chargement avant d'activer
-
-    // Définition des sources de données
     var arrondissementsSource = {
         type: 'geojson',
         data: 'https://donnees.montreal.ca/dataset/9797a946-9da8-41ec-8815-f6b276dec7e9/resource/e18bfd07-edc8-4ce8-8a5a-3b617662a794/download/limites-administratives-agglomeration.geojson'
     };
 
-    var vulnerabiliteSource = {
-        type: 'geojson',
-        data: 'https://donnees.montreal.ca/dataset/3603f75a-1963-4130-9fc5-ab3e7272211a/resource/01afc867-11f2-4a3b-b77e-d5e9ee853c87/download/vulnerabilite-crues-polygones-simplifies-2022.geojson'
-      };
-
-
-    // Définition des couches
+   
+    // Définition des couches arrondissement 
 
     var arrondissementsLayer = {
         id: 'arrondissements',
@@ -55,41 +44,9 @@
         layout: {
             'visibility': 'visible' // Affiché par défaut
         }
-    };
+        };
 
-
-    // Définition de la couche avec symbologie par type de commerce
-    var vulnerabiliteLayer = {
-        id: 'vulnerabilite',
-        type: 'fill',
-        source: 'vulnerabiliteSource',
-
-        paint: {
-            'fill-color': '#ccc',
-            'fill-opacity': 0.5,
-            'fill-outline-color': '#000',
-
-            'fill-color': [
-            'match',
-                ['get', 'cruesCat'],
-                'Élevée', 'orange',
-                'Majeure', 'yellow',
-                'Mineure', 'blue',
-                'Modéré', 'green',
-                'Non significative', 'purple',
-
-                ],
-        },
-        layout: {
-            'visibility': 'visible' // Affiché par défaut
-        }
-
-    
-  };
-
-      //Definitions de Label
-
-      // Arrondissement
+      // Arrondissement Label 
 
     var arrondissementsLabelsLayer = {
         id: 'arrondissements-labels',
@@ -107,4 +64,31 @@
           'text-halo-width': 1.5
         }
       };
+
+
+    //  Couches vulnerabilite 
+
+    var vulnerabiliteSource = {
+        type: 'geojson',
+        data: 'https://donnees.montreal.ca/dataset/3603f75a-1963-4130-9fc5-ab3e7272211a/resource/01afc867-11f2-4a3b-b77e-d5e9ee853c87/download/vulnerabilite-crues-polygones-simplifies-2022.geojson'
+      };
+
+   // Definition de la couche vulnerabilite
+
+    var vulnerabiliteLayer = {
+        id: 'vulnerabilite',
+        type: 'fill',
+        source: 'vulnerabiliteSource ',
+        paint: {
+            'fill-color': '#ccc',
+            'fill-opacity': 0.5,
+            'fill-outline-color': '#000'
+        },
+        layout: {
+            'visibility': 'visible' // Affiché par défaut
+        }
+        };
+
+
+   
 
