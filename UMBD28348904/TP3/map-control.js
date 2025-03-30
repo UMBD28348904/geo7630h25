@@ -20,6 +20,18 @@ map.addControl(new maplibregl.AttributionControl({
 var scale = new maplibregl.ScaleControl({ unit: 'metric' });
 map.addControl(scale);
 
+
+// Récupération de la liste déroulante
+const inondationdropdown = document.getElementById('inondation-dropdown');
+
+// Exemple d'activation de la liste déroulante (à adapter selon votre logique)
+setTimeout(() => {
+    inondationdropdown.disabled = false;
+}, 1000); // Simule un chargement avant d'activer
+
+
+
+
 // Définition des sources GeoJSON
 var arrondissementsSource = {
     type: 'geojson',
