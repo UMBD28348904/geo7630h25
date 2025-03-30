@@ -5,7 +5,7 @@ services:
     ports:
       - 9000:80
     volumes:
-      - ./Atlas:/usr/share/nginx/html:ro
+      - ./TP3/Atlas/app/equipe-UMBA-TATIANA:/usr/share/nginx/html:ro
     restart: always
 
   labo10-web:
