@@ -26,6 +26,7 @@ map.addControl(geolocateControl, 'bottom-right'); // Ajoute le contrôle en bas 
 var scale = new maplibregl.ScaleControl({ unit: 'metric' }); // Échelle en unités métriques
 map.addControl(scale); // Ajoute le contrôle d'échelle à la carte
 
+
 // Récupération de l'élément dropdown pour la sélection des catégories d'inondation
 const inondationDropdown = document.getElementById('inondation-dropdown');
 if (inondationDropdown) {
@@ -35,6 +36,7 @@ if (inondationDropdown) {
     // Gestion de l'erreur si l'élément n'est pas trouvé
     console.error('L\'élément inondation-dropdown n\'a pas été trouvé.');
 }
+
 
 // Définition de la source de données pour les arrondissements
 const arrondissementsSource = {
