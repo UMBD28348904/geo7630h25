@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
 
         // Chargement de la couche de risque d'inondation
-        fetch('https://services6.arcgis.com/133a00biU9FItiqJ/arcgis/rest/services/risque_inond/FeatureServer/0/query?where=1=1&outFields=*&f=geojson')
+        fetch('https://services6.arcgis.com/133a00biU9FItiqJ/arcgis/rest/services/inondation_sortie_(2)/FeatureServer/0/query?where=1=1&outFields=*&f=geojson')
             .then(response => response.json())
             .then(data => {
                 map.addSource('risque_inondation', {
@@ -74,13 +74,13 @@ document.addEventListener('DOMContentLoaded', function () {
                     type: 'fill',
                     source: 'risque_inondation',
                     paint: {
-                        'fill-color': '#ff0000',
+                        'fill-color': 'black',
                         'fill-opacity': 0.4,
                         'fill-outline-color': '#880000'
                     }
                 });
             })
-            .catch(error => console.error('Erreur lors du chargement de la couche d’inondation :', error));
+            
     });
 
     // Afficher/masquer les arrondissements via la case à cocher
