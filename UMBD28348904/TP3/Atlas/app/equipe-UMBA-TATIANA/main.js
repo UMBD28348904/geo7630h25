@@ -1,22 +1,16 @@
-
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Initialisation de la carte MapLibre GL
     const map = new maplibregl.Map({
-        container: 'map', // identifiant de l'élément HTML conteneur de la carte
-        style: 'https://api.maptiler.com/maps/dataviz/style.json?key=JhO9AmIPH59xnAn5GiSj', // URL du style de la carte
-        center: [-73.55, 45.55], // position centrale de la carte
-        zoom: 11, // niveau de zoom initial
-        hash: true // activation du hash pour la gestion de l'historique de la carte
+        container: 'map',
+        style: 'https://api.maptiler.com/maps/dataviz/style.json?key=JhO9AmIPH59xnAn5GiSj',
+        center: [-73.55, 45.55],
+        zoom: 11,
+        hash: true
     });
 
-    // Ajouter les contrôles de navigation (zoom, rotation)
     map.addControl(new maplibregl.NavigationControl());
-
-    // Attribution compacte
     map.addControl(new maplibregl.AttributionControl({ compact: true }));
-
-    // Echelle
-    var scale = new maplibregl.ScaleControl({ unit: 'metric' });
+    const scale = new maplibregl.ScaleControl({ unit: 'metric' });
     map.addControl(scale);
 
     // Activation différée de la liste déroulante
@@ -25,51 +19,71 @@ document.addEventListener('DOMContentLoaded', function() {
         inondationdropdown.disabled = false;
     }, 1000);
 
-    // Source et couche des arrondissements
-    var arrondissementsSource = {
-        type: 'geojson',
-        data: 'https://donnees.montreal.ca/dataset/9797a946-9da8-41ec-8815-f6b276dec7e9/resource/e18bfd07-edc8-4ce8-8a5a-3b617662a794/download/limites-administratives-agglomeration.geojson'
-    };
+    // Données des arrondissements
+    const arrondissementsSourceUrl = 'https://donnees.montreal.ca/dataset/9797a946-9da8-41ec-8815-f6b276dec7e9/resource/e18bfd07-edc8-4ce8-8a5a-3b617662a794/download/limites-administratives-agglomeration.geojson';
 
-    var arrondissementsLayer = {
-        id: 'arrondissements',
-        type: 'fill',
-        source: 'arrondissementsSource',
-        paint: {
-            'fill-color': '#ccc',
-            'fill-opacity': 0.5,
-            'fill-outline-color': '#000'
-        }
-    };
-
-
-
-      //Labels des arrondissements
-    var arrondissementsLabelsLayer = {
-        id: 'arrondissements-labels',
-        type: 'symbol',
-        source: 'arrondissementsSource',
-        layout: {
-          'text-field': ['get', 'NOM'], 
-          'text-font': ['Open Sans Bold', 'Arial Unicode MS Bold'],
-          'text-size': 14,
-          'text-anchor': 'center'
-        },
-        paint: {
-          'text-color': '#111',
-          'text-halo-color': '#fff',
-          'text-halo-width': 2
-        }
-      };
-
-    // Ajout de la source et couche des arrondissements
+    // Chargement des sources et couches après le chargement de la carte
     map.on('load', function () {
-        map.addSource('arrondissementsSource', arrondissementsSource);
-        map.addLayer(arrondissementsLayer);
-        map.addLayer(arrondissementsLabelsLayer);
+        // Source des arrondissements
+        map.addSource('arrondissementsSource', {
+            type: 'geojson',
+            data: arrondissementsSourceUrl
+        });
+
+        // Couche de remplissage des arrondissements
+        map.addLayer({
+            id: 'arrondissements',
+            type: 'fill',
+            source: 'arrondissementsSource',
+            paint: {
+                'fill-color': '#ccc',
+                'fill-opacity': 0.5,
+                'fill-outline-color': '#000'
+            }
+        });
+
+        // Couche de labels des arrondissements
+        map.addLayer({
+            id: 'arrondissements-labels',
+            type: 'symbol',
+            source: 'arrondissementsSource',
+            layout: {
+                'text-field': ['get', 'NOM'],
+                'text-font': ['Open Sans Bold', 'Arial Unicode MS Bold'],
+                'text-size': 14,
+                'text-anchor': 'center'
+            },
+            paint: {
+                'text-color': '#111',
+                'text-halo-color': '#fff',
+                'text-halo-width': 2
+            }
+        });
+
+        // Chargement de la couche de risque d'inondation
+        fetch('https://services6.arcgis.com/133a00biU9FItiqJ/arcgis/rest/services/risque_inond/FeatureServer/0/query?where=1=1&outFields=*&f=geojson')
+            .then(response => response.json())
+            .then(data => {
+                map.addSource('risque_inondation', {
+                    type: 'geojson',
+                    data: data
+                });
+
+                map.addLayer({
+                    id: 'risque_inondation',
+                    type: 'fill',
+                    source: 'risque_inondation',
+                    paint: {
+                        'fill-color': '#ff0000',
+                        'fill-opacity': 0.4,
+                        'fill-outline-color': '#880000'
+                    }
+                });
+            })
+            .catch(error => console.error('Erreur lors du chargement de la couche d’inondation :', error));
     });
 
-    // Gestion de la case à cocher pour afficher/masquer les arrondissements
+    // Afficher/masquer les arrondissements via la case à cocher
     document.getElementById('neighborhoods').addEventListener('change', function (e) {
         const visibility = e.target.checked ? 'visible' : 'none';
         map.setLayoutProperty('arrondissements', 'visibility', visibility);
