@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
         container: 'map',
         style: 'https://api.maptiler.com/maps/dataviz/style.json?key=JhO9AmIPH59xnAn5GiSj',
         center: [-73.55, 45.55],
-        zoom: 11,
+        zoom: 10,
         hash: true
     });
 
@@ -60,26 +60,6 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
 
-        // Chargement de la couche de risque d'inondation
-        fetch('https://services6.arcgis.com/133a00biU9FItiqJ/arcgis/rest/services/inondation_sortie_(2)/FeatureServer/0/query?where=1=1&outFields=*&f=geojson')
-            .then(response => response.json())
-            .then(data => {
-                map.addSource('risque_inondation', {
-                    type: 'geojson',
-                    data: data
-                });
-
-                map.addLayer({
-                    id: 'risque_inondation',
-                    type: 'fill',
-                    source: 'risque_inondation',
-                    paint: {
-                        'fill-color': 'black',
-                        'fill-opacity': 0.4,
-                        'fill-outline-color': '#880000'
-                    }
-                });
-            })
             
     });
 

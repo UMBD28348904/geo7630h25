@@ -3,7 +3,7 @@ services:
   tp3:
     image: nginx
     ports:
-      - 8000:80
+      - 7000:80
     volumes:
       - ./TP3/Atlas/app/equipe-UMBA-TATIANA:/usr/share/nginx/html:ro
     restart: always
@@ -11,7 +11,7 @@ services:
   labo10-web:
     image: nginx
     ports:
-      - 7000:80
+      - 5000:80
     volumes:
       - ./labo10:/usr/share/nginx/html:ro
     restart: always
