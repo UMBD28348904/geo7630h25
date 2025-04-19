@@ -71,6 +71,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Gestion de la case à cocher pour afficher/masquer les arrondissements
     document.getElementById('neighborhoods').addEventListener('change', function (e) {
-        map.setLayoutProperty('arrondissements', 'visibility', e.target.checked ? 'visible' : 'none');
+        const visibility = e.target.checked ? 'visible' : 'none';
+        map.setLayoutProperty('arrondissements', 'visibility', visibility);
+        map.setLayoutProperty('arrondissements-labels', 'visibility', visibility);
     });
 });
