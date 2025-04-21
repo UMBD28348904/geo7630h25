@@ -100,4 +100,24 @@ document.addEventListener('DOMContentLoaded', function () {
         map.setLayoutProperty('arrondissements', 'visibility', visibility);
         map.setLayoutProperty('arrondissements-labels', 'visibility', visibility);
     });
+
+
+       // Filtrage des collisions en fonction de la gravité sélectionnée
+       inondationdropdown.addEventListener('change', function (e) {
+        const selectedValue = e.target.value.trim();
+
+        // Si aucune valeur ou valeur par défaut, on réinitialise le filtre
+        if (!selectedValue) {
+            map.setFilter('collisions', null);
+            return;
+        }
+        
+        // Sinon, on filtre par la gravité choisie
+        map.setFilter('collisions', ['==', ['get', 'GRAVITE'], selectedValue]);
+    });
+
 });
+
+
+    // Filtrage des collisions en fonction de la gravité sélectionnée
+    
