@@ -103,17 +103,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
        // Filtrage des collisions en fonction de la gravité sélectionnée
-       inondationdropdown.addEventListener('change', function (e) {
-        const selectedValue = e.target.value.trim();
+    inondationdropdown.addEventListener('change', function (e) {
+    const selectedValue = e.target.value.trim();
 
-        // Si aucune valeur ou valeur par défaut, on réinitialise le filtre
-        if (!selectedValue) {
+     // Si aucune valeur ou valeur par défaut, on réinitialise le filtre
+    if (!selectedValue) {
             map.setFilter('collisions', null);
             return;
-        }
-        
-        // Sinon, on filtre par la gravité choisie
-        map.setFilter('collisions', ['==', ['get', 'GRAVITE'], selectedValue]);
+     }
+
+     // Sinon, on filtre par la gravité choisie
+     map.setFilter('collisions', ['==', ['get', 'GRAVITE'], selectedValue]);
     });
 
 });
