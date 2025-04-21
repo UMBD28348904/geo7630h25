@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // Initialisation de la carte MapLibre GL
     const map = new maplibregl.Map({
         container: 'map',
         style: 'https://api.maptiler.com/maps/dataviz/style.json?key=JhO9AmIPH59xnAn5GiSj',
@@ -13,24 +12,22 @@ document.addEventListener('DOMContentLoaded', function () {
     const scale = new maplibregl.ScaleControl({ unit: 'metric' });
     map.addControl(scale);
 
-    // Activation différée de la liste déroulante
     const inondationdropdown = document.getElementById('inondation-dropdown');
     setTimeout(() => {
         inondationdropdown.disabled = false;
     }, 1000);
 
-    // Données des arrondissements et collisions
     const arrondissementsSourceUrl = 'https://donnees.montreal.ca/dataset/9797a946-9da8-41ec-8815-f6b276dec7e9/resource/e18bfd07-edc8-4ce8-8a5a-3b617662a794/download/limites-administratives-agglomeration.geojson';
-    const collisionurl = 'https://donnees.montreal.ca/fr/dataset/cd722e22-376b-4b89-9bc2-7c7ab317ef6b/resource/3957364a-f579-4bc4-987a-299708fefd3e/download/collisions_routieres.geojson'
-    // Chargement des sources et couches après le chargement de la carte
-    map.on('load', function () {
-        // Source des arrondissements
+    const collisionurl = 'https://donnees.montreal.ca/fr/dataset/cd722e22-376b-4b89-9bc2-7c7ab317ef6b/resource/3957364a-f579-4bc4-987a-299708fefd3e/download/collisions_routieres.geojson';
+
+    let collisionsData = null; // on garde les données en mémoire ici
+
+    map.on('load', async function () {
         map.addSource('arrondissementsSource', {
             type: 'geojson',
             data: arrondissementsSourceUrl
         });
 
-        // Couche de remplissage des arrondissements
         map.addLayer({
             id: 'arrondissements',
             type: 'fill',
@@ -42,7 +39,6 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
 
-        // Couche de labels des arrondissements
         map.addLayer({
             id: 'arrondissements-labels',
             type: 'symbol',
@@ -60,70 +56,81 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
 
+        // Charger les collisions une seule fois
+        const response = await fetch(collisionurl);
+        collisionsData = await response.json();
 
-    // Source des collisions
-    map.addSource('collisionsSource', {
-        type: 'geojson',
-        data: collisionurl
+        map.addSource('collisionsSource', {
+            type: 'geojson',
+            data: collisionsData
+        });
+
+        map.addLayer({
+            id: 'collisions',
+            type: 'circle',
+            source: 'collisionsSource',
+            paint: {
+                'circle-color': [
+                    'match',
+                    ['get', 'GRAVITE'],
+                    'Dommages matériels inférieurs au seuil de rapportage', 'orange',
+                    'Dommages matériels seulement', 'yellow',
+                    'Grave', 'blue',
+                    'Léger', 'green',
+                    'Mortel', 'purple',
+                    'grey'
+                ],
+                'circle-stroke-color': '#fff',
+                'circle-stroke-width': 1
+            }
+        });
     });
 
-    // Couche de remplissage des collisions
-    map.addLayer({
-        id: 'collisions',
-        type: 'circle',
-        source: 'collisionsSource',
-        paint: {
-    // Couleur variable selon le gravité
-      'circle-color': [
-        'match',
-        ['get', 'GRAVITE'],
-        'Dommages matériels inférieurs au seuil de rapportage', 'orange',
-        'Dommages matériels seulement', 'yellow',
-        'Grave', 'blue',
-        'Léger', 'green',
-        'Mortel', 'purple',
-        'grey' // couleur par défaut
-      ],
-      'circle-stroke-color': '#fff',
-      'circle-stroke-width': 1
-        }
-    });
-
-
-            
-    });
-
- // Données des arrondissements
-    // Afficher/masquer les arrondissements via la case à cocher
     document.getElementById('neighborhoods').addEventListener('change', function (e) {
         const visibility = e.target.checked ? 'visible' : 'none';
         map.setLayoutProperty('arrondissements', 'visibility', visibility);
         map.setLayoutProperty('arrondissements-labels', 'visibility', visibility);
     });
 
-
-       // Filtrage des collisions en fonction de la gravité sélectionnée
+    // Calcul des statistiques une fois que les données sont en mémoire
     inondationdropdown.addEventListener('change', function (e) {
         const selectedValue = e.target.value.trim();
 
-     // Si aucune valeur ou valeur par défaut, on réinitialise le filtre
+        if (!collisionsData) {
+            console.warn('Les données ne sont pas encore chargées.');
+            return;
+        }
+
         if (!selectedValue) {
-                map.setFilter('collisions', null);
-                return;
-     }
+            map.setFilter('collisions', null);
+            updateStats(0, 0, 0, 0);
+            return;
+        }
 
-     // Sinon, on filtre par la gravité choisie
-     map.setFilter('collisions', ['==', ['get', 'GRAVITE'], selectedValue]);
-     
+        map.setFilter('collisions', ['==', ['get', 'GRAVITE'], selectedValue]);
 
+        let nbAccidents = 0;
+        let nbMorts = 0;
+        let nbBlesses = 0;
+        let nbVictimes = 0;
 
+        collisionsData.features.forEach(f => {
+            const p = f.properties;
+            if (p.GRAVITE && p.GRAVITE.trim() === selectedValue) {
+                nbAccidents++;
+                nbMorts += parseInt(p.NB_MORTS) || 0;
+                nbBlesses += parseInt(p.NB_BLESSES) || 0;
+                nbVictimes += parseInt(p.NB_VICTIME) || 0;
+            }
+        });
+
+        updateStats(nbAccidents, nbMorts, nbBlesses, nbVictimes);
     });
 
-
-   
-
+    function updateStats(accidents, morts, blesses, victimes) {
+        document.getElementById('nb_accidents').textContent = `Nombre d'accidents : ${accidents}`;
+        document.getElementById('nb_morts').textContent = `Nombre de morts : ${morts}`;
+        document.getElementById('nb_blesses').textContent = `Nombre de blessés : ${blesses}`;
+        document.getElementById('nb_victimes').textContent = `Nombre de victimes : ${victimes}`;
+    }
 });
-
-
-    // Filtrage des collisions en fonction de la gravité sélectionnée
-    

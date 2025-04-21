@@ -45,27 +45,25 @@
 
                     <div class="select-vitality-data mb-3">
                         <h4>Selectionner le niveau de gravité des accidents </h4>
-                        <select class="form-select" id="inondation-dropdown" disabled>
-                            <option value="">-- Selectionner les données--</option>
-                            <option value="Dommages matériels inférieurs au seuil de rapportage">Dommages matériels inférieurs au seuil de rapportage</option>
-                            <option value="Dommages matériels seulement">Dommages matériels seulement</option>
+                        <select id="inondation-dropdown" disabled>
+                            <option value="">-- Sélectionner --</option>
+                            <option value="Mortel">Mortel</option>
                             <option value="Grave">Grave</option>
                             <option value="Léger">Léger</option>
-                            <option value="Mortel">Mortel</option>
-                        </select>
+                            <option value="Dommages matériels seulement">Dommages matériels seulement</option>
+                            <option value="Dommages matériels inférieurs au seuil de rapportage">Dommages matériels inférieurs au seuil de rapportage</option>
+                          </select>
                     </div>
 
-                    <h5>Nombre total total d'accident par niveau de gravité  </h5>
-                    <div class="accident">...</div>
-
-                    <h5>Nombre total des morts </h5>
-                    <div class="dead">...</div>
-
-                    <h5>Nombre total des blessés </h5>
-                    <div class="blesse">...</div>
-
-                    <h5>Nombre total des victimes </h5>
-                    <div class="victime">...</div>
+                    <div id="stats" style="margin-top: 10px; font-family: Arial;">
+                        <h3>Statistiques</h3>
+                        <p id="nb_accidents">Nombre d'accidents : 0</p>
+                        <p id="nb_morts">Nombre de morts : 0</p>
+                        <p id="nb_blesses">Nombre de blessés : 0</p>
+                        <p id="nb_victimes">Nombre de victimes : 0</p>
+                    </div>
+                    
+                    
 
                 </div>
             </div>
