@@ -95,43 +95,37 @@ document.addEventListener('DOMContentLoaded', function () {
     // Calcul des statistiques une fois que les données sont en mémoire
     inondationdropdown.addEventListener('change', function (e) {
         const selectedValue = e.target.value.trim();
-
+    
         if (!collisionsData) {
             console.warn('Les données ne sont pas encore chargées.');
             return;
         }
-
+    
         if (!selectedValue) {
             map.setFilter('collisions', null);
-            updateStats(0, 0, 0, 0);
+            updateStats(0, 0);
             return;
         }
-
+    
         map.setFilter('collisions', ['==', ['get', 'GRAVITE'], selectedValue]);
-
+    
         let nbAccidents = 0;
         let nbMorts = 0;
-        let nbBlesses = 0;
-        let nbVictimes = 0;
-
+    
         collisionsData.features.forEach(f => {
             const p = f.properties;
             if (p.GRAVITE && p.GRAVITE.trim() === selectedValue) {
                 nbAccidents++;
-                nbMorts += parseInt(p.NB_MORTS) || 0;
-                nbBlesses += parseInt(p.NB_BLESSES) || 0;
-                nbVictimes += parseInt(p.NB_VICTIME) || 0;
+                nbMorts += parseInt(p.NB_MORTS) || 0; // On additionne uniquement les morts
             }
         });
-
-        updateStats(nbAccidents, nbMorts, nbBlesses, nbVictimes);
+    
+        updateStats(nbAccidents, nbMorts);
     });
-
-    function updateStats(accidents, morts, blesses, victimes) {
-        console.log("Mise à jour des stats :", { accidents, morts, blesses, victimes });
+    
+    function updateStats(accidents, morts) {
+        console.log("Mise à jour des stats :", { accidents, morts });
         document.getElementById('nb_accidents').textContent = `Nombre d'accidents : ${accidents}`;
         document.getElementById('nb_morts').textContent = `Nombre de morts : ${morts}`;
-        document.getElementById('nb_blesses').textContent = `Nombre de blessés : ${blesses}`;
-        document.getElementById('nb_victimes').textContent = `Nombre de victimes : ${victimes}`;
     }
 });
