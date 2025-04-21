@@ -60,15 +60,6 @@ document.addEventListener('DOMContentLoaded', function () {
         const response = await fetch(collisionurl);
         collisionsData = await response.json();
 
-        // Filtrer uniquement les collisions de l'année 2023
-        collisionsData.features = collisionsData.features.filter(f => {
-            const dateStr = f.properties.DT_ACCDN;
-            if (!dateStr) return false;
-            const year = new Date(dateStr).getFullYear();
-            return year === 2023;
-    });
-
-
         map.addSource('collisionsSource', {
             type: 'geojson',
             data: collisionsData
