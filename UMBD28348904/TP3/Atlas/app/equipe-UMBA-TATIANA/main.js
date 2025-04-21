@@ -60,6 +60,15 @@ document.addEventListener('DOMContentLoaded', function () {
         const response = await fetch(collisionurl);
         collisionsData = await response.json();
 
+        // Filtrer uniquement les collisions de l'année 2023
+        collisionsData.features = collisionsData.features.filter(f => {
+            const dateStr = f.properties.DT_ACCDN;
+            if (!dateStr) return false;
+            const year = new Date(dateStr).getFullYear();
+            return year === 2023;
+    });
+
+
         map.addSource('collisionsSource', {
             type: 'geojson',
             data: collisionsData
@@ -128,6 +137,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     function updateStats(accidents, morts, blesses, victimes) {
+        console.log("Mise à jour des stats :", { accidents, morts, blesses, victimes });
         document.getElementById('nb_accidents').textContent = `Nombre d'accidents : ${accidents}`;
         document.getElementById('nb_morts').textContent = `Nombre de morts : ${morts}`;
         document.getElementById('nb_blesses').textContent = `Nombre de blessés : ${blesses}`;
