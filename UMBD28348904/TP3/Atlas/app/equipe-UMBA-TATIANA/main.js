@@ -19,9 +19,9 @@ document.addEventListener('DOMContentLoaded', function () {
         inondationdropdown.disabled = false;
     }, 1000);
 
-    // Données des arrondissements
+    // Données des arrondissements et collisions
     const arrondissementsSourceUrl = 'https://donnees.montreal.ca/dataset/9797a946-9da8-41ec-8815-f6b276dec7e9/resource/e18bfd07-edc8-4ce8-8a5a-3b617662a794/download/limites-administratives-agglomeration.geojson';
-
+    const collisionurl = 'https://donnees.montreal.ca/fr/dataset/cd722e22-376b-4b89-9bc2-7c7ab317ef6b/resource/3957364a-f579-4bc4-987a-299708fefd3e/download/collisions_routieres.geojson'
     // Chargement des sources et couches après le chargement de la carte
     map.on('load', function () {
         // Source des arrondissements
@@ -60,9 +60,40 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
 
+
+    // Source des collisions
+    map.addSource('collisionsSource', {
+        type: 'geojson',
+        data: collisionurl
+    });
+
+    // Couche de remplissage des collisions
+    map.addLayer({
+        id: 'collisions',
+        type: 'circle',
+        source: 'collisionsSource',
+        paint: {
+    // Couleur variable selon le gravité
+      'circle-color': [
+        'match',
+        ['get', 'GRAVITE'],
+        'Dommages matériels inférieurs au seuil de rapportage', 'orange',
+        'Dommages matériels seulement', 'yellow',
+        'Grave', 'blue',
+        'Léger', 'green',
+        'Mortel', 'purple',
+        'grey' // couleur par défaut
+      ],
+      'circle-stroke-color': '#fff',
+      'circle-stroke-width': 1
+        }
+    });
+
+
             
     });
 
+ // Données des arrondissements
     // Afficher/masquer les arrondissements via la case à cocher
     document.getElementById('neighborhoods').addEventListener('change', function (e) {
         const visibility = e.target.checked ? 'visible' : 'none';
