@@ -10,9 +10,6 @@ body {
     height: 100vh;
 }
 
-#map {
-    /* Styles will be applied inline in the HTML */
-}
 
 .sidebar-header h2 {
     font-size: 1.5rem;
@@ -53,3 +50,5 @@ body {
     margin: 0; /* Supprime les marges par défaut du h1 pour un centrage précis */
     padding: 0; /* Supprime les rembourrages par défaut du h1 */
 }
+
+
