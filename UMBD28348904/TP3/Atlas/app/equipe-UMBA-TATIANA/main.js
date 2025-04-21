@@ -104,12 +104,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
        // Filtrage des collisions en fonction de la gravité sélectionnée
     inondationdropdown.addEventListener('change', function (e) {
-    const selectedValue = e.target.value.trim();
+        const selectedValue = e.target.value.trim();
 
      // Si aucune valeur ou valeur par défaut, on réinitialise le filtre
-    if (!selectedValue) {
-            map.setFilter('collisions', null);
-            return;
+        if (!selectedValue) {
+                map.setFilter('collisions', null);
+                return;
      }
 
      // Sinon, on filtre par la gravité choisie
