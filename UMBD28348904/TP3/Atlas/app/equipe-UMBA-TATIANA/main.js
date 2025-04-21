@@ -114,7 +114,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
      // Sinon, on filtre par la gravité choisie
      map.setFilter('collisions', ['==', ['get', 'GRAVITE'], selectedValue]);
+     
+
+
     });
+
+
+   
 
 });
 
