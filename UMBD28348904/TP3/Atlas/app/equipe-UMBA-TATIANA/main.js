@@ -190,31 +190,5 @@ document.addEventListener('DOMContentLoaded', function () {
         .addTo(map);
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     
 });
