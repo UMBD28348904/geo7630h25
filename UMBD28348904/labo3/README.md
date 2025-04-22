@@ -86,11 +86,15 @@ Ajouter un NullAttributeManager au flux de travail.
 ![image](https://github.com/user-attachments/assets/9dbd24d1-5f9a-45f0-8518-7d3e42e2d9a5)
 
 
+#### 11. Analyse de la densité arboricole avec une grille H3
+
+Les grilles H3 permettent une analyse uniforme et adaptable grâce à leurs cellules hexagonales, idéales pour comparer des zones géographiques.
+
+1.Connecter les données des parcs à un H3HexagonalIndexer.
+2.Configurer la taille des hexagones.
 
 
-
-
-
+![image](https://github.com/user-attachments/assets/11efc5ee-b4d1-439e-beae-12688acd5048)
 
 
 
