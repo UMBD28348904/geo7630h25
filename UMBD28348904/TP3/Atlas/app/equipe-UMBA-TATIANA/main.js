@@ -132,17 +132,6 @@ document.addEventListener('DOMContentLoaded', function () {
         document.getElementById('nb_morts').textContent = `Nombre de morts : ${morts}`;
     }
 
-
-
-
-
-
-
-
-
-
-
-    
 // 1. Curseur pointeur au survol des collisions
     map.on('mouseenter', 'collisions', () => {
         map.getCanvas().style.cursor = 'pointer';
