@@ -1,3 +1,12 @@
+const map = new maplibregl.Map({
+    container: 'map',
+    style: 'https://api.maptiler.com/maps/dataviz/style.json?key=JhO9AmIPH59xnAn5GiSj',
+    center: [-73.55, 45.55],
+    zoom: 10,
+    hash: true
+});
+
+
 // 1. Curseur pointeur au survol des collisions
 map.on('mouseenter', 'collisions', () => {
     map.getCanvas().style.cursor = 'pointer';
@@ -11,6 +20,7 @@ function mettreAJourCompteur() {
     const compteurElement = document.getElementById('compteur');
     if (!compteurElement) return;
 
+    // Vérification de la couche "collisions"
     const features = map.queryRenderedFeatures({ layers: ['collisions'] });
     compteurElement.innerText = `Collisions visibles : ${features.length}`;
 }
@@ -29,6 +39,7 @@ if (filtreTypeElement) {
         if (!type) {
             map.setFilter('collisions', null);
         } else {
+            // Vérification du champ 'GRAVITE'
             map.setFilter('collisions', ['==', ['get', 'GRAVITE'], type]);
         }
 
@@ -47,6 +58,7 @@ map.on('click', 'collisions', (e) => {
     const props = feature.properties;
     const coords = feature.geometry.coordinates;
 
+    // Vérification des propriétés avant d'afficher la popup
     new maplibregl.Popup()
         .setLngLat(coords)
         .setHTML(`
