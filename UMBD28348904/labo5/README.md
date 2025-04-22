@@ -23,8 +23,6 @@ http://depot.ville.montreal.qc.ca/geomatique/lidar_aerien/2015/300-5040_2015.laz
 http://depot.ville.montreal.qc.ca/geomatique/lidar_aerien/2015/300-5039_2015.laz
 
 
-![alt text](image.png)
-
 
 
 
