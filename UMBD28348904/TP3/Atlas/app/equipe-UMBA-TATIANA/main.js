@@ -84,9 +84,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 'circle-stroke-width': 1
             }
 
-            // 🔁 Mise à jour du compteur après filtrage
-            mettreAJourCompteur();
         });
+
+        
     });
 
 
