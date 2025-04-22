@@ -4,8 +4,9 @@ Optimiser la densité d’implantation d’arbres dans les parcs de Montréal (p
 
 #### 1. Jeux des données disponibles :
 
-- 🌲 Arbres (points) : fichier CSV. :https://www.donneesquebec.ca/recherche/dataset/34103a43-3712-4a29-92e1-039e9188e915/resource/13a51853-a5b5-4add-8791-02ccba5c1be7/download/vdq-arbrerepertorie.csv
-- 🏞️ Parcs (polygones) : fichier GeoJSON. : 
+- 🌲 Arbres (points) : https://donnees.montreal.ca/fr/dataset/arbres/resource/64e28fe6-ef37-437a-972d-d1d3f1f7d891/download
+
+- 🏞️ Parcs (polygones) : fichier GeoJSON. : https://donnees.montreal.ca/fr/dataset/grands-parcs-parcs-d-arrondissements-et-espaces-publics/resource/35796624-15df-4503-a569-797665f8768e/download
 
 
 
