@@ -9,26 +9,23 @@ Optimiser la densité d’implantation d’arbres dans les parcs de Montréal (p
 - 🏞️ Parcs (polygones) : fichier GeoJSON. : https://donnees.montreal.ca/fr/dataset/grands-parcs-parcs-d-arrondissements-et-espaces-publics/resource/35796624-15df-4503-a569-797665f8768e/download
 
 
-
-
-
-#### 2. Lire les données sources dans FME
+#### 2. Chargement des données dans FME
 
 1. Ouvrez FME Workbench et créez un nouveau projet. 
-3. Ajoutez un Reader pour  CSV pour les données des arbres  et Geojson pour les quartiers
-
-![image](https://github.com/user-attachments/assets/d4d16fa7-32ab-48a9-a95f-eed213940bbb)
-
-![image](https://github.com/user-attachments/assets/d104ed3f-4a19-4a9a-ab26-84f4aa6fe7fe)
+3. Ajoutez un Reader pour  CSV pour les données des arbres  et Geojson pour les parcs
+   
+![image](https://github.com/user-attachments/assets/4e9a9c20-2d52-43da-9514-dbfdb4933340)
 
 
 #### 3. Reprojection des données
 
 Utilisez le Reprojector pour projeter les deux jeux de données en EPSG:32188 MTM8
 
-![image](https://github.com/user-attachments/assets/f9c700ad-0ee5-44d1-8879-698473a7da05)
 
-![image](https://github.com/user-attachments/assets/7dcf4455-deb1-4cb8-9a93-b743f82b3aef)
+
+
+
+
 
 #### 4. Jointure spatiale
 
