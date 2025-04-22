@@ -104,4 +104,11 @@ https://data.montreal.ca/dataset/b628f1da-9dc3-4bb1-9875-1470f891afb1/resource/9
 - Ensuite on va créer un attribut pour calculer la moyenne AttributeCreator
 - Ensuite on fait un peu de ménage pour garder seulement les 2 propriétés qui nous intéressent avec un AttributeManager
 - Ensuite on transforme le FME color en RGB ou WebRGB  avec un ColorConverter (FME Hub)
-- Puis on exporte notre résultat avec GeoJSONWriter dans le répertoire : 
+- Puis on exporte notre résultat avec GeoJSONWriter dans le répertoire :
+
+![image](https://github.com/user-attachments/assets/ee76b842-b7d3-49d1-bf08-cb5b47c43656)
+
+
+##  Étape final
+
+![image](https://github.com/user-attachments/assets/3fd69aec-1ebc-4896-99c5-9173496ef241)
