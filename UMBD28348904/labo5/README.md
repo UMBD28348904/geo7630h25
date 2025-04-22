@@ -81,6 +81,7 @@ https://data.montreal.ca/dataset/b628f1da-9dc3-4bb1-9875-1470f891afb1/resource/9
  - Ensuite on va filtrer les valeurs du nuage de points dont le raster n’a pas donné de valeur avec un pointCloudFilter
  - Puis pour terminer nous allons transformer le nuage de points en couche de vecteurs ponctuels simple avec un PointCloudCoercer, en s’assurant de garder les composantes nécessaires pour la suite
 
+
 ![image](https://github.com/user-attachments/assets/ada23961-66ff-4c72-9015-91c6028ddd95)
 
 ####  Étape 6 Ajout des empruntes et details de bâtiments
@@ -92,3 +93,15 @@ https://data.montreal.ca/dataset/b628f1da-9dc3-4bb1-9875-1470f891afb1/resource/9
  - Calculez le bounding box du nuage de points avec un BoundingBoxAccumulator
  - Ensuite on découpe avec un Clipper les polygones et les lignes
  - Et on découpe les empreintes de toits avec les détails avec un PolygonCutter issue du FMEHub
+
+![image](https://github.com/user-attachments/assets/61d4dd59-a04e-40f6-b1a1-7f9164295eac)
+
+####  Étape 7 Jointure des propriétés du nuage de points dans les polygones
+
+-Puis on vient joindre les polygones détaillés avec les points du nuages de points pour y injecter les valeurs de Z et de couleur du batiments avec un PointOnAreaOverlayer
+
+- On ajoute un ListSummer
+- Ensuite on va créer un attribut pour calculer la moyenne AttributeCreator
+- Ensuite on fait un peu de ménage pour garder seulement les 2 propriétés qui nous intéressent avec un AttributeManager
+- Ensuite on transforme le FME color en RGB ou WebRGB  avec un ColorConverter (FME Hub)
+- Puis on exporte notre résultat avec GeoJSONWriter dans le répertoire : 
