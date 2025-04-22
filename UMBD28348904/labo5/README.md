@@ -6,7 +6,7 @@
 - [Données]https://drive.google.com/file/d/1GNEDPSGwSdACGDY3BhyQMRrtKXjtsQb2/view?usp=drive_link
 
 
-#### Etapes des données
+#### Étape 1 Importation et nettoyage des nuages de points
 
 - Ajouter les 6 nuages de points suivante avec un LAS READER
 
