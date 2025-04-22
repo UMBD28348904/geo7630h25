@@ -1,10 +1,15 @@
 # 📚GEO 7630 Laboratoire 3 : Optimisation de la densité d’implantation d’arbres dans les parcs de Montréal (problématique fictive)
 ## 🎯Objectif de laboratoire
-Ce deuxième laboratoire vise à approfondir nos compétences dans FME et QGIS. Vous apprendrez à manipuler des données géospatiales plus complexes en combinant des données vectorielles et matricielles, et à réaliser une jointure spatiale.
+Optimiser la densité d’implantation d’arbres dans les parcs de Montréal (problématique factice)
 
 #### 1. Jeux des données disponibles :
- - Arbres :[Données ponctuelles (csv)](https://donnees.montreal.ca/dataset/b89fd27d-4b49-461b-8e54-fa2b34a628c4/resource/64e28fe6-ef37-437a-972d-d1d3f1f7d891/download/arbres-publics.csv)
- - Quartier ( Polygône en Geojson) :[Polygone](https://donnees.montreal.ca/dataset/9797a946-9da8-41ec-8815-f6b276dec7e9/resource/6b313375-d9bc-4dc3-af8e-ceae3762ae6e/download/limites-administratives-agglomeration-nad83.geojson)
+
+- 🌲 Arbres (points) : fichier CSV. :https://www.donneesquebec.ca/recherche/dataset/34103a43-3712-4a29-92e1-039e9188e915/resource/13a51853-a5b5-4add-8791-02ccba5c1be7/download/vdq-arbrerepertorie.csv
+- 🏞️ Parcs (polygones) : fichier GeoJSON. : 
+
+
+
+
 
 #### 2. Lire les données sources dans FME
 
