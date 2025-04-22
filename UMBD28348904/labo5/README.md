@@ -8,7 +8,7 @@
 
 #### Étape 1 Importation et nettoyage des nuages de points
 
-- Ajouter les 6 nuages de points suivante avec un LAS READER
+- Ajouter les 6 nuages de points suivante avec un LAS READER,Ajoutez sur chacun des reader un Thinner avec un filtre de 30 et Ensuite ajoutez y un pointcloudcombiner pour combiner les 6 nuages de points en 1 seul
 
 http://depot.ville.montreal.qc.ca/geomatique/lidar_aerien/2015/301-5041_2015.laz
 
@@ -23,7 +23,7 @@ http://depot.ville.montreal.qc.ca/geomatique/lidar_aerien/2015/300-5040_2015.laz
 http://depot.ville.montreal.qc.ca/geomatique/lidar_aerien/2015/300-5039_2015.laz
 
 
-
+![alt text](image.png)
 
 
 
