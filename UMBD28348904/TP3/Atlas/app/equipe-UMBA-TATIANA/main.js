@@ -83,8 +83,40 @@ document.addEventListener('DOMContentLoaded', function () {
                 'circle-stroke-color': '#fff',
                 'circle-stroke-width': 1
             }
+
+            // 🔁 Mise à jour du compteur après filtrage
+            mettreAJourCompteur();
         });
     });
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     document.getElementById('neighborhoods').addEventListener('change', function (e) {
         const visibility = e.target.checked ? 'visible' : 'none';
