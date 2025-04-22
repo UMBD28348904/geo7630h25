@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
         container: 'map',
         style: 'https://api.maptiler.com/maps/dataviz/style.json?key=JhO9AmIPH59xnAn5GiSj',
         center: [-73.55, 45.55],
-        zoom: 10,
+        zoom: 9,
         hash: true
     });
 
@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 'text-halo-width': 2
             }
         });
-
+       
         // Charger les collisions une seule fois
         const response = await fetch(collisionurl);
         collisionsData = await response.json();
@@ -136,6 +136,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
+
+
+
+
+
+
+    
 // 1. Curseur pointeur au survol des collisions
     map.on('mouseenter', 'collisions', () => {
         map.getCanvas().style.cursor = 'pointer';
@@ -157,19 +164,16 @@ document.addEventListener('DOMContentLoaded', function () {
 // 3. Filtrage des collisions par gravité via le dropdown
     const filtreTypeElement = document.getElementById('inondation-dropdown');
         if (filtreTypeElement) {
-        filtreTypeElement.addEventListener('change', () => {
-        if (!collisionsData) {
-            console.warn('Les données de collisions ne sont pas encore chargées.');
-            return;
-        }
-
+        filtreTypeElement.addEventListener('change', function (){
         const type = filtreTypeElement.value.trim();
 
-        if (!type) {
+        if (type === 'Tous') {
             map.setFilter('collisions', null);
         } else {
             // Vérification du champ 'GRAVITE'
-            map.setFilter('collisions', ['==', ['get', 'GRAVITE'], type]);
+            map.setFilter('collisions', ['==', ['get', 'GRAVITE'], type]
+                
+            );
         }
 
         mettreAJourCompteur();
@@ -192,7 +196,7 @@ document.addEventListener('DOMContentLoaded', function () {
         .setLngLat(coords)
         .setHTML(`
             <strong>Gravité :</strong> ${props.GRAVITE || 'Non spécifiée'}<br>
-            <strong>Nombre de morts :</strong> ${props.NB_MORTS || 0}
+            <strong>Nombre de morts :</strong> ${props.NB_MORTS || 0} 
         `)
         .addTo(map);
 });
