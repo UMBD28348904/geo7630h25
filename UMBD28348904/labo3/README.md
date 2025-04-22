@@ -34,21 +34,31 @@ Utilisez le Reprojector pour projeter les deux jeux de données en EPSG:32188 MT
 - Supression des doublons ainsi que les latitudes et longitudes avec des valeurs nulles
 - Utilisez le transformer ATTRIBUTEKEEPER pour conserver uniquement les champs essentiels dans la nouvelle couche de données. Cela simplifie l’analyse et réduit la taille des données.
 
+
   ![image](https://github.com/user-attachments/assets/a9061892-0afc-4898-b310-0ab0ae0810b7)
 
 
 
+#### 6. Calcul de la médiane de densité
+Calculer la médiane pour les variables tree_count et tree_density permet d’identifier les valeurs centrales et de mieux comprendre la répartition des arbres dans les parcs.
+
+1. Ajouter un StatisticsCalculator au flux de travail.
+2. Configurer les paramètres pour calculer la médiane de variable suivante :
+
+- point_count (nombre d’arbres).
+- 
+![image](https://github.com/user-attachments/assets/069315a3-713b-4aa1-90ad-8ecc4d906f97)
 
 
 
 
 
 
-2. Nettoyez les attributs :
- - Gardez uniquement les attributs pertinents (ex. nom_quartier, nombre_arbres).
- - Utilisez le tansformer attributeManager  pour filtrer les colonnes inutiles.
 
-![image](https://github.com/user-attachments/assets/e840161a-9f05-4db1-8533-d03530d99fc5)
+
+
+
+
 
 
 #### 5. Calcul d'une statistique supplémentaire
