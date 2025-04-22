@@ -81,4 +81,14 @@ https://data.montreal.ca/dataset/b628f1da-9dc3-4bb1-9875-1470f891afb1/resource/9
  - Ensuite on va filtrer les valeurs du nuage de points dont le raster n’a pas donné de valeur avec un pointCloudFilter
  - Puis pour terminer nous allons transformer le nuage de points en couche de vecteurs ponctuels simple avec un PointCloudCoercer, en s’assurant de garder les composantes nécessaires pour la suite
 
+![image](https://github.com/user-attachments/assets/ada23961-66ff-4c72-9015-91c6028ddd95)
 
+####  Étape 6 Ajout des empruntes et details de bâtiments
+
+ Maintenant que le nuage de point est nettoyé et préparé, nous allons assigner le Z et la couleur aux polygones de bâtiments
+
+ - Ajoutez 2 sources shapefiles pour les empreintes de toits  (polygones) et les détails des toits (lignes)
+ - Reprojetez 2950 en 3857 avec un EsriReprojector
+ - Calculez le bounding box du nuage de points avec un BoundingBoxAccumulator
+ - Ensuite on découpe avec un Clipper les polygones et les lignes
+ - Et on découpe les empreintes de toits avec les détails avec un PolygonCutter issue du FMEHub
