@@ -21,22 +21,15 @@ Optimiser la densité d’implantation d’arbres dans les parcs de Montréal (p
 
 Utilisez le Reprojector pour projeter les deux jeux de données en EPSG:32188 MTM8
 
-
-
-
-
+![image](https://github.com/user-attachments/assets/00cdfc6e-fa99-4897-acae-375ef019282d)
 
 
 #### 4. Jointure spatiale
 
-1.Effectuez une jointure spatiale pour compter le nombre d'arbres par quartier :
+- Effectuer une jointure spatiale pour associer chaque arbre à un parc.
+- Utiliser le transformer PointOnAreaOverlayer.
 
- - Utilisez le transformer  PointOnAreaOverlayer pour associer chaque point (arbre) à un polygone (quartier).
- - Calculez la somme des arbres dans chaque quartier.
-
-![image](https://github.com/user-attachments/assets/579dc0e5-3ccb-4282-b18d-16d8b68786b0)
-
-![image](https://github.com/user-attachments/assets/8980fe1a-5de7-4c9c-b974-141c84203d63)
+![image](https://github.com/user-attachments/assets/b289f90d-e270-4044-91dd-4d952ff12343)
 
 
 2. Nettoyez les attributs :
