@@ -8,7 +8,6 @@ Optimiser la densité d’implantation d’arbres dans les parcs de Montréal (p
 
 - 🏞️ Parcs (polygones) : fichier GeoJSON. : https://donnees.montreal.ca/fr/dataset/grands-parcs-parcs-d-arrondissements-et-espaces-publics/resource/35796624-15df-4503-a569-797665f8768e/download
 
-
 #### 2. Chargement des données dans FME
 
 1. Ouvrez FME Workbench et créez un nouveau projet. 
@@ -16,13 +15,11 @@ Optimiser la densité d’implantation d’arbres dans les parcs de Montréal (p
    
 ![image](https://github.com/user-attachments/assets/4e9a9c20-2d52-43da-9514-dbfdb4933340)
 
-
 #### 3. Reprojection des données
 
 Utilisez le Reprojector pour projeter les deux jeux de données en EPSG:32188 MTM8
 
 ![image](https://github.com/user-attachments/assets/00cdfc6e-fa99-4897-acae-375ef019282d)
-
 
 #### 4. Jointure spatiale
 
@@ -30,6 +27,21 @@ Utilisez le Reprojector pour projeter les deux jeux de données en EPSG:32188 MT
 - Utiliser le transformer PointOnAreaOverlayer.
 
 ![image](https://github.com/user-attachments/assets/b289f90d-e270-4044-91dd-4d952ff12343)
+
+
+#### 5.Nettoyage et validation des données
+
+- Supression des doublons ainsi que les latitudes et longitudes avec des valeurs nulles
+- Utilisez le transformer ATTRIBUTEKEEPER pour conserver uniquement les champs essentiels dans la nouvelle couche de données. Cela simplifie l’analyse et réduit la taille des données.
+
+  ![image](https://github.com/user-attachments/assets/a9061892-0afc-4898-b310-0ab0ae0810b7)
+
+
+
+
+
+
+
 
 
 2. Nettoyez les attributs :
