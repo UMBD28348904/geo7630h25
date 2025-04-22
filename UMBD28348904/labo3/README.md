@@ -38,7 +38,6 @@ Utilisez le Reprojector pour projeter les deux jeux de données en EPSG:32188 MT
   ![image](https://github.com/user-attachments/assets/a9061892-0afc-4898-b310-0ab0ae0810b7)
 
 
-
 #### 6. Calcul de la médiane de densité
 Calculer la médiane pour les variables tree_count et tree_density permet d’identifier les valeurs centrales et de mieux comprendre la répartition des arbres dans les parcs.
 
@@ -46,8 +45,40 @@ Calculer la médiane pour les variables tree_count et tree_density permet d’id
 2. Configurer les paramètres pour calculer la médiane de variable suivante :
 
 - point_count (nombre d’arbres).
-- 
+  
 ![image](https://github.com/user-attachments/assets/069315a3-713b-4aa1-90ad-8ecc4d906f97)
+
+
+#### 7. Calcul de l’index par rapport à la moyenne
+
+Calculer l’index par rapport à la moyenne permet de normaliser les données et d’identifier les parcs ayant une densité ou un nombre d’arbres significativement au-dessus ou en dessous de la moyenne.
+
+1. Ajouter un AttributeManager au flux de travail.
+
+2. Configurer une nouvelle formule pour calculer l’index :
+
+ -Exemple : index = valeur actuelle / moyenne.
+
+![image](https://github.com/user-attachments/assets/ffcbb140-03d1-4d48-877b-8417b6771d88)
+
+
+#### 8. Nettoyage des données
+
+Consiste à supprimer les valeurs nulles.
+Ajouter un NullAttributeManager au flux de travail.
+
+![image](https://github.com/user-attachments/assets/2a6e2f28-443a-4ef4-9c38-0c7a9b0f40bf)
+
+
+#### 9. Exportation des résultats
+
+1.Enregistrer les résultats dans une base de données PostGIS.
+2.Paramètres de connexion :
+Host : geo7630h25.cvwywmuc8u6v.us-east-1.rds.amazonaws.com
+Port : 5432
+Database : geo7630
+Schéma : votre code permanent.
+
 
 
 
