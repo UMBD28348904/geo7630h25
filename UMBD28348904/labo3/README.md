@@ -74,11 +74,16 @@ Ajouter un NullAttributeManager au flux de travail.
 
 1.Enregistrer les résultats dans une base de données PostGIS.
 2.Paramètres de connexion :
-Host : geo7630h25.cvwywmuc8u6v.us-east-1.rds.amazonaws.com
-Port : 5432
-Database : geo7630
-Schéma : votre code permanent.
+- Host : geo7630h25.cvwywmuc8u6v.us-east-1.rds.amazonaws.com
+- Port : 5432
+- Database : geo7630
+- Schéma : votre code permanent.
 
+
+#### 10. Visualisation des résultats
+
+
+![image](https://github.com/user-attachments/assets/9dbd24d1-5f9a-45f0-8518-7d3e42e2d9a5)
 
 
 
