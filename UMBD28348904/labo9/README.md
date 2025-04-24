@@ -1,6 +1,13 @@
-# 📚GEO 7630 Laboratoire 6 et 7 :ArcGIS Online, Dashboard et Experience Builder – Intégration de données
+# 📚GEO 7630 Laboratoire 9 : Webmapping Open Source et interaction avec MapLibreGL
 ## 🎯Objectif de laboratoire
-Ce laboratoire vous guidera à travers l’intégration de données dans ArcGIS Online (AGOL) et leur exploitation via Dashboard et Experience Builder. Vous apprendrez également à automatiser les mises à jour avec FME.
+Ce laboratoire vous permettra d’explorer le webmapping open source à travers MapLibreGL, une librairie JavaScript permettant d’afficher des cartes interactives. Vous apprendrez à :
+
+- Modifier les coordonnées de départ de l’application.
+- Modifier la couleur des polygones.
+- Créer une fonction pour générer des couleurs aléatoires.
+- Assigner des couleurs thématiques en fonction des attributs.
+- Ajouter une couche d’étiquettes.
+- Utiliser GitHub pour versionner votre code.
 
 #### Etape 1. CSV Reader :
 1. Créer un nouveau Workbench (WB) FME.
