@@ -40,3 +40,5 @@ Ce laboratoire vous permettra d’explorer le webmapping open source à travers 
 ![image](https://github.com/user-attachments/assets/00595fe4-a24d-4ed7-b115-b9fbf0990f08)
 
 ## Resultat final
+
+![image](https://github.com/user-attachments/assets/00ef6fd3-dc26-4ef4-9835-1e862ac1fd1b)
