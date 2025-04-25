@@ -112,3 +112,7 @@ https://data.montreal.ca/dataset/b628f1da-9dc3-4bb1-9875-1470f891afb1/resource/9
 ##  Étape final
 
 ![image](https://github.com/user-attachments/assets/3fd69aec-1ebc-4896-99c5-9173496ef241)
+
+##  Visualisation dans MaplibreGL
+
+![image](https://github.com/user-attachments/assets/3419fd46-2e74-4ac5-964d-882e5e83420b)
