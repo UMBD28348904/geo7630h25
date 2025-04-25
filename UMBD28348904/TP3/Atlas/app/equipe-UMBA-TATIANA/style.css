@@ -51,11 +51,11 @@ body {
     padding: 0; /* Supprime les rembourrages par défaut du h1 */
 }
 
+
 .legend-container {
     position: absolute;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
+    top: 40%;
+    left: 70%;
     background-color: white;
     padding: 10px 20px;
     border-radius: 8px;
@@ -63,7 +63,6 @@ body {
     font-family: sans-serif;
     z-index: 10;
     text-align: left;
-    max-width: 300px;
 }
 
 .legend-title {
