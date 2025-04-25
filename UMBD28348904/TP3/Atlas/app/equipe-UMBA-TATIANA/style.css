@@ -76,7 +76,7 @@ body {
     display: flex;
     align-items: center;
     cursor: pointer;
-    padding: 4px 0;
+    padding: 2px 0;
 }
 
 .legend-item:hover {
@@ -84,8 +84,8 @@ body {
 }
 
 .legend-circle {
-    width: 14px;
-    height: 14px;
+    width: 12px;
+    height: 12px;
     border-radius: 50%;
     background-color: var(--color);
     margin-right: 10px;
