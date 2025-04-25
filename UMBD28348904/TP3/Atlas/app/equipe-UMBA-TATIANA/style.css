@@ -55,7 +55,7 @@ body {
 .legend-container {
     position: absolute;
     top: 40%;
-    left: 75%;
+    left: 70%;
     background-color: white;
     padding: 10px 20px;
     border-radius: 8px;
@@ -76,7 +76,7 @@ body {
     display: flex;
     align-items: center;
     cursor: pointer;
-    padding: 2px 0;
+    padding: 1px 0;
 }
 
 .legend-item:hover {
