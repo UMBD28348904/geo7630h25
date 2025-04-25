@@ -89,6 +89,17 @@ document.addEventListener('DOMContentLoaded', function () {
         
     });
 
+    document.querySelectorAll('.legend-item').forEach(item => {
+        item.addEventListener('click', function () {
+            const gravite = this.getAttribute('data-gravite');
+            if (gravite === 'Tous') {
+                map.setFilter('collisions', null);
+            } else {
+                map.setFilter('collisions', ['==', ['get', 'GRAVITE'], gravite]);
+            }
+        });
+    });
+
     document.getElementById('neighborhoods').addEventListener('change', function (e) {
         const visibility = e.target.checked ? 'visible' : 'none';
         map.setLayoutProperty('arrondissements', 'visibility', visibility);
@@ -189,6 +200,7 @@ document.addEventListener('DOMContentLoaded', function () {
         `)
         .addTo(map);
 });
+
 
     
 });
