@@ -196,7 +196,8 @@ inondationdropdown.addEventListener('change', function (e) {
             
             updateStats(nbAccidents, nbMorts);
 
-![image](https://github.com/user-attachments/assets/f94defa2-7847-44b2-b80f-8e859d50fc20)
+![image](https://github.com/user-attachments/assets/4dea117a-a90a-4828-a5b3-7105e8787a0b)
+
 
      // Met à jour le texte contenant les statistiques d'accidents et morts
           
