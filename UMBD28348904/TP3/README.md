@@ -34,7 +34,7 @@ https://donnees.montreal.ca/fr/dataset/cd722e22-376b-4b89-9bc2-7c7ab317ef6b/reso
 - style.css
 
 
-## V. Étape 1 Initialisation de la carte
+## Étape 1 Initialisation de la carte
 
     // Création de la carte avec Maplibre GL
     const map = new maplibregl.Map({
@@ -55,9 +55,88 @@ https://donnees.montreal.ca/fr/dataset/cd722e22-376b-4b89-9bc2-7c7ab317ef6b/reso
     const scale = new maplibregl.ScaleControl({ unit: 'metric' });
     map.addControl(scale);
 
+## Étape 2 : Chargement de données depuis l'Api des données ouvertes de Québec
+
+ // URL des données GeoJSON des arrondissements
+    const arrondissementsSourceUrl = 'https://donnees.montreal.ca/dataset/9797a946-9da8-41ec-8815-f6b276dec7e9/resource/e18bfd07-edc8-4ce8-8a5a-3b617662a794/download/limites-administratives-agglomeration.geojson';
+
+    // URL des données GeoJSON des collisions routières
+    const collisionurl = 'https://donnees.montreal.ca/fr/dataset/cd722e22-376b-4b89-9bc2-7c7ab317ef6b/resource/3957364a-f579-4bc4-987a-299708fefd3e/download/collisions_routieres.geojson';
 
 
 
+    // Variable pour stocker les données de collisions
+    let collisionsData = null;
 
+    // Événement déclenché lorsque la carte est chargée
+    map.on('load', async function () {
+
+        // Ajoute la source GeoJSON des arrondissements
+        map.addSource('arrondissementsSource', {
+            type: 'geojson',
+            data: arrondissementsSourceUrl
+        });
+
+        // Ajoute une couche de remplissage pour les arrondissements
+        map.addLayer({
+            id: 'arrondissements',
+            type: 'fill',
+            source: 'arrondissementsSource',
+            paint: {
+                'fill-color': '#ccc',
+                'fill-opacity': 0.5,
+                'fill-outline-color': '#000'
+            }
+        });
+
+        // Ajoute une couche d’étiquettes pour afficher les noms d’arrondissements
+        map.addLayer({
+            id: 'arrondissements-labels',
+            type: 'symbol',
+            source: 'arrondissementsSource',
+            layout: {
+                'text-field': ['get', 'NOM'],
+                'text-font': ['Open Sans Bold', 'Arial Unicode MS Bold'],
+                'text-size': 14,
+                'text-anchor': 'center'
+            },
+            paint: {
+                'text-color': '#111',
+                'text-halo-color': '#fff',
+                'text-halo-width': 2
+            }
+        });
+
+        // Charge les données de collisions
+        const response = await fetch(collisionurl);
+        collisionsData = await response.json();
+
+        // Ajoute la source des collisions à la carte
+        map.addSource('collisionsSource', {
+            type: 'geojson',
+            data: collisionsData
+        });
+
+        // Ajoute une couche de points pour les collisions avec couleurs selon la gravité
+        map.addLayer({
+            id: 'collisions',
+            type: 'circle',
+            source: 'collisionsSource',
+            paint: {
+                'circle-color': [
+                    'match',
+                    ['get', 'GRAVITE'],
+                    'Dommages matériels inférieurs au seuil de rapportage', 'orange',
+                    'Dommages matériels seulement', 'yellow',
+                    'Grave', 'blue',
+                    'Léger', 'green',
+                    'Mortel', 'purple',
+                    'grey'
+                ],
+                'circle-stroke-color': '#fff',
+                'circle-stroke-width': 1
+            }
+        });
+    });
 
 
