@@ -132,17 +132,17 @@ https://donnees.montreal.ca/fr/dataset/cd722e22-376b-4b89-9bc2-7c7ab317ef6b/reso
 ## Étape 3 : Stylisation de la couche collision en fonction de gravité de collision
 
 
-paint: {
-          'circle-color': [
-                'match',
-                  ['get', 'GRAVITE'],
-                    'Dommages matériels inférieurs au seuil de rapportage', 'orange',
-                    'Dommages matériels seulement', 'yellow',
-                    'Grave', 'blue',
-                    'Léger', 'green',
-                    'Mortel', 'purple',
-                    'grey'
-                ],
+        paint: {
+              'circle-color': [
+                  'match',
+                    ['get', 'GRAVITE'],
+                      'Dommages matériels inférieurs au seuil de rapportage', 'orange',
+                      'Dommages matériels seulement', 'yellow',
+                      'Grave', 'blue',
+                      'Léger', 'green',
+                      'Mortel', 'purple',
+                      'grey'
+                    ],
 
 
                 
@@ -196,8 +196,7 @@ inondationdropdown.addEventListener('change', function (e) {
             
             updateStats(nbAccidents, nbMorts);
 
-
-            ![image](https://github.com/user-attachments/assets/f94defa2-7847-44b2-b80f-8e859d50fc20)
+![image](https://github.com/user-attachments/assets/f94defa2-7847-44b2-b80f-8e859d50fc20)
 
      // Met à jour le texte contenant les statistiques d'accidents et morts
           
