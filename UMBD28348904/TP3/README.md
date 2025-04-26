@@ -251,4 +251,10 @@ inondationdropdown.addEventListener('change', function (e) {
             .addTo(map);
     });
 
+## Etape 10 Ajout de bouton  qui fait appel au storymap des collisions routière ( Voir fichier .html)
 
+ <button id="button_url">
+                            <a href="https://storymaps.arcgis.com/stories/cfd724c3566a4802903577957b940c8f" target="_blank">
+                              Contexte général de la collision
+                            </a>
+                          </button>
