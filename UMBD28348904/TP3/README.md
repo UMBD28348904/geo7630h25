@@ -222,3 +222,33 @@ inondationdropdown.addEventListener('change', function (e) {
             }
         });
     });
+    
+## Etape 8 changer l'apparence du curseur de la souris
+
+  // Change le curseur en pointeur au survol des collisions
+    map.on('mouseenter', 'collisions', () => {
+        map.getCanvas().style.cursor = 'pointer';
+    });
+    map.on('mouseleave', 'collisions', () => {
+        map.getCanvas().style.cursor = '';
+    });
+
+## Etape 9 Affiche une popup avec détails au clic sur une collision
+
+    map.on('click', 'collisions', (e) => {
+        const feature = e.features?.[0];
+        if (!feature) return;
+
+        const props = feature.properties;
+        const coords = feature.geometry.coordinates;
+
+        new maplibregl.Popup()
+            .setLngLat(coords)
+            .setHTML(`
+                <strong>Gravité :</strong> ${props.GRAVITE || 'Non spécifiée'}<br>
+                <strong>Nombre de morts :</strong> ${props.NB_MORTS || 0} 
+            `)
+            .addTo(map);
+    });
+
+
