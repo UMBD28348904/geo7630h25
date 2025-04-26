@@ -206,3 +206,19 @@ inondationdropdown.addEventListener('change', function (e) {
         document.getElementById('nb_accidents').textContent = `Nombre d'accidents : ${accidents}`;
         document.getElementById('nb_morts').textContent = `Nombre de morts : ${morts}`;
     }
+
+
+## Etape 7 Ajout de la légende dynamique
+
+// Gère le clic sur les éléments de la légende pour filtrer les collisions selon la gravité
+
+    document.querySelectorAll('.legend-item').forEach(item => {
+        item.addEventListener('click', function () {
+            const gravite = this.getAttribute('data-gravite');
+            if (gravite === 'Tous') {
+                map.setFilter('collisions', null);
+            } else {
+                map.setFilter('collisions', ['==', ['get', 'GRAVITE'], gravite]);
+            }
+        });
+    });
