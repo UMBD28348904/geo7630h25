@@ -251,7 +251,12 @@ inondationdropdown.addEventListener('change', function (e) {
             .addTo(map);
     });
 
-## Etape 10 codes complet .js
+## Etape 10 carte final
+
+![image](https://github.com/user-attachments/assets/00170924-7e9a-4761-91cd-31ca14f1b65f)
+
+
+## Etape 11 codes complet .js
 
 // Attend que le DOM soit complètement chargé avant d'exécuter le script
 document.addEventListener('DOMContentLoaded', function () {
@@ -465,6 +470,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-## Etape 11 carte final
 
-![image](https://github.com/user-attachments/assets/092077d2-3ac7-4136-8ee5-984943750eeb)
+
+
+
