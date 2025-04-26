@@ -57,13 +57,11 @@ https://donnees.montreal.ca/fr/dataset/cd722e22-376b-4b89-9bc2-7c7ab317ef6b/reso
 
 ## Étape 2 : Chargement de données depuis l'Api des données ouvertes de Québec
 
- // URL des données GeoJSON des arrondissements
+    // URL des données GeoJSON des arrondissements
     const arrondissementsSourceUrl = 'https://donnees.montreal.ca/dataset/9797a946-9da8-41ec-8815-f6b276dec7e9/resource/e18bfd07-edc8-4ce8-8a5a-3b617662a794/download/limites-administratives-agglomeration.geojson';
 
     // URL des données GeoJSON des collisions routières
     const collisionurl = 'https://donnees.montreal.ca/fr/dataset/cd722e22-376b-4b89-9bc2-7c7ab317ef6b/resource/3957364a-f579-4bc4-987a-299708fefd3e/download/collisions_routieres.geojson';
-
-
 
     // Variable pour stocker les données de collisions
     let collisionsData = null;
@@ -138,5 +136,3 @@ https://donnees.montreal.ca/fr/dataset/cd722e22-376b-4b89-9bc2-7c7ab317ef6b/reso
             }
         });
     });
-
-
