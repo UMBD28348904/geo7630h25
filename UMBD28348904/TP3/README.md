@@ -147,3 +147,34 @@ paint: {
 
                 
 ![image](https://github.com/user-attachments/assets/709d16d0-bcda-4283-915b-60cd6d2f32d6)
+
+## Étape 4 : Ajout de bouton pour masquer la couche d'arrondissement
+
+  // Affiche ou masque les arrondissements selon l'état de la case à cocher
+    document.getElementById('neighborhoods').addEventListener('change', function (e) {
+        const visibility = e.target.checked ? 'visible' : 'none';
+        map.setLayoutProperty('arrondissements', 'visibility', visibility);
+        map.setLayoutProperty('arrondissements-labels', 'visibility', visibility);
+    });
+
+## Étape 5 : Ajout de derouler pour les gravité
+
+inondationdropdown.addEventListener('change', function (e) {
+        const selectedValue = e.target.value.trim();
+
+        // Si les données ne sont pas chargées, avertit et sort
+        if (!collisionsData) {
+            console.warn('Les données ne sont pas encore chargées.');
+            return;
+        }
+
+        // Si "Tous" est sélectionné, supprime les filtres et remet les stats à zéro
+        if (!selectedValue || selectedValue === 'Tous') {
+            map.setFilter('collisions', null);
+            updateStats(0, 0);
+        } else {
+            // Filtre les collisions selon la gravité sélectionnée
+            map.setFilter('collisions', ['==', ['get', 'GRAVITE'], selectedValue]);
+
+
+  ## Etape 6 Ajout de Kpis, ( C
