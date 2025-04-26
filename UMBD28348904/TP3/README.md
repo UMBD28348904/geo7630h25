@@ -115,7 +115,7 @@ https://donnees.montreal.ca/fr/dataset/cd722e22-376b-4b89-9bc2-7c7ab317ef6b/reso
             data: collisionsData
         });
 
-        // Ajoute une couche de points pour les collisions avec couleurs selon la gravité
+        // Ajoute une couche de points pour les collisions
         map.addLayer({
             id: 'collisions',
             type: 'circle',
@@ -131,6 +131,7 @@ https://donnees.montreal.ca/fr/dataset/cd722e22-376b-4b89-9bc2-7c7ab317ef6b/reso
 
 ## Étape 3 : Stylisation de la couche collision en fonction de gravité de collision
 
+
 paint: {
           'circle-color': [
                 'match',
@@ -142,5 +143,7 @@ paint: {
                     'Mortel', 'purple',
                     'grey'
                 ],
+
+
                 
 ![image](https://github.com/user-attachments/assets/709d16d0-bcda-4283-915b-60cd6d2f32d6)
