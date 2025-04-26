@@ -151,6 +151,7 @@ paint: {
 ## Étape 4 : Ajout de bouton pour masquer la couche d'arrondissement
 
   // Affiche ou masque les arrondissements selon l'état de la case à cocher
+  
     document.getElementById('neighborhoods').addEventListener('change', function (e) {
         const visibility = e.target.checked ? 'visible' : 'none';
         map.setLayoutProperty('arrondissements', 'visibility', visibility);
@@ -177,4 +178,31 @@ inondationdropdown.addEventListener('change', function (e) {
             map.setFilter('collisions', ['==', ['get', 'GRAVITE'], selectedValue]);
 
 
-  ## Etape 6 Ajout de Kpis, ( C
+  ## Etape 6 Ajout de Kpis, ( Calcul de nombre d'accidents et de morts)
+  
+            let nbAccidents = 0;
+            let nbMorts = 0;
+
+            // Calcule le nombre d'accidents et de morts
+            collisionsData.features.forEach(f => {
+                const p = f.properties;
+                if (p.GRAVITE && p.GRAVITE.trim() === selectedValue) {
+                    nbAccidents++;
+                    nbMorts += parseInt(p.NB_MORTS) || 0;
+                }
+            });
+
+            // Met à jour les statistiques affichées
+            
+            updateStats(nbAccidents, nbMorts);
+
+
+            ![image](https://github.com/user-attachments/assets/f94defa2-7847-44b2-b80f-8e859d50fc20)
+
+     // Met à jour le texte contenant les statistiques d'accidents et morts
+          
+        function updateStats(accidents, morts) {
+        console.log("Mise à jour des stats :", { accidents, morts });
+        document.getElementById('nb_accidents').textContent = `Nombre d'accidents : ${accidents}`;
+        document.getElementById('nb_morts').textContent = `Nombre de morts : ${morts}`;
+    }
