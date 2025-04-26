@@ -9,18 +9,37 @@ Présentés par :
 
 
 
-# 📒 Sujet : Modélisation géospatiale des collisions routière à Montréal
+# 📒 Sujet : Modélisation géospatiale des collisions routière à Montréal de 2012 à 2023
 
-## Données disponible
+## I. Contexte 
+Entre 2012 et 2023, Montréal a traversé une période de transformation urbaine marquée par une densification de la population, une diversification des modes de transport et une réorganisation des infrastructures. Cette évolution a entraîné une cohabitation difficile sur les routes, augmentant les risques de collisions.
+
+Malgré des investissements en aménagements sécuritaires (pistes cyclables, rues apaisées) et l’adoption de la stratégie Vision Zéro en 2016, les résultats sont mitigés. Les décès ont culminé en 2022 avant de diminuer en 2023, mais les blessures légères sont en hausse. Les piétons demeurent les plus vulnérables.
+
+Les principaux facteurs de risque incluent la vitesse, l’inattention, les facultés affaiblies, et des infrastructures parfois inadéquates. Montréal poursuit ses efforts, mais la sécurité routière reste un défi crucial dans un environnement urbain en constante mutation.
+
+## II. Objectifs du projet 
+ -Créer une application qui visualise le nombre d’accidents et de décès survenus à Montréal entre 2012 et 2023.
+
+## III. Données disponible
 Collision routière Montréal  :  
 
 https://donnees.montreal.ca/fr/dataset/cd722e22-376b-4b89-9bc2-7c7ab317ef6b/resource/3957364a-f579-4bc4-987a-299708fefd3e/download/collisions_routieres.geojson
 
 
+## IV. Fichiers du projet
 
-## Chargement des données
+- index.html
+- main.js
+- style.css
 
-Nous utilisons AddReader dans FME pour l'ajout des differentes données
+
+## V. Étape 1 Initialisation de la carte
+
+
+
+
+
 
 ![image](https://github.com/user-attachments/assets/18065cc3-edc4-4642-acc0-a660c8998ab4)
 
