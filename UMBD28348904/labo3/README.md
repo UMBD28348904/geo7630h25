@@ -97,9 +97,30 @@ Les grilles H3 permettent une analyse uniforme et adaptable grâce à leurs cell
 ![image](https://github.com/user-attachments/assets/11efc5ee-b4d1-439e-beae-12688acd5048)
 
 
+#### 1. Dissolver
+
+![image](https://github.com/user-attachments/assets/732987cd-0673-4d10-9124-623fa99e8113)
+
+#### 2. Réprojection ( Esri reprojection)
+
+![image](https://github.com/user-attachments/assets/613c60a2-3f78-44b3-8661-fff82739c77d)
+
+#### 3.Jointure spatiale
+
+![image](https://github.com/user-attachments/assets/f82a430c-de2d-439a-9ecd-56cc5355787b)
 
 
+#### 4. Gestion des attributs
 
+![image](https://github.com/user-attachments/assets/d69a23b5-1c73-41a7-aacd-59741b605797)
+
+### 5. Visualisation
+
+![image](https://github.com/user-attachments/assets/daa50f19-5140-43fe-a140-84cf52f7cffc)
+
+### 6. final
+
+![image](https://github.com/user-attachments/assets/963c815b-4e78-4b49-858b-08eb70c96871)
 
 
 
