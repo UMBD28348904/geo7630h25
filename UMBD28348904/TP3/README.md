@@ -129,12 +129,12 @@ https://donnees.montreal.ca/fr/dataset/cd722e22-376b-4b89-9bc2-7c7ab317ef6b/reso
     
 ![image](https://github.com/user-attachments/assets/53abfeca-1313-476a-aefc-64315ea1d154)
 
-## Étape 3 : Stylisation de la couche collision
+## Étape 3 : Stylisation de la couche collision en fonction de gravité de collision
 
 paint: {
-                'circle-color': [
-                    'match',
-                    ['get', 'GRAVITE'],
+          'circle-color': [
+                'match',
+                  ['get', 'GRAVITE'],
                     'Dommages matériels inférieurs au seuil de rapportage', 'orange',
                     'Dommages matériels seulement', 'yellow',
                     'Grave', 'blue',
