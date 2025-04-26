@@ -120,7 +120,17 @@ https://donnees.montreal.ca/fr/dataset/cd722e22-376b-4b89-9bc2-7c7ab317ef6b/reso
             id: 'collisions',
             type: 'circle',
             source: 'collisionsSource',
-            paint: {
+            
+                'circle-stroke-color': '#fff',
+                'circle-stroke-width': 1
+            }
+        });
+    });
+    
+![image](https://github.com/user-attachments/assets/53abfeca-1313-476a-aefc-64315ea1d154)
+
+## Étape 3 : Stylisation de la couche collision
+paint: {
                 'circle-color': [
                     'match',
                     ['get', 'GRAVITE'],
@@ -131,10 +141,5 @@ https://donnees.montreal.ca/fr/dataset/cd722e22-376b-4b89-9bc2-7c7ab317ef6b/reso
                     'Mortel', 'purple',
                     'grey'
                 ],
-                'circle-stroke-color': '#fff',
-                'circle-stroke-width': 1
-            }
-        });
-    });
-    
-![image](https://github.com/user-attachments/assets/53abfeca-1313-476a-aefc-64315ea1d154)
+                
+![image](https://github.com/user-attachments/assets/709d16d0-bcda-4283-915b-60cd6d2f32d6)
