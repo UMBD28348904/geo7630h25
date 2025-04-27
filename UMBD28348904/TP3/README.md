@@ -236,9 +236,7 @@ inondationdropdown.addEventListener('change', function (e) {
         map.getCanvas().style.cursor = '';
     });
 
-
-
-## Etape 9
+## Etape 9 Mise à jour dynamique du compteur de collisions visibles sur la carte
 
 // Fonction qui met à jour le compteur des collisions actuellement visibles
     function mettreAJourCompteur() {
@@ -251,6 +249,7 @@ inondationdropdown.addEventListener('change', function (e) {
 
     // Met à jour le compteur lorsque la carte a fini de se déplacer
     map.on('moveend', mettreAJourCompteur);
+
 
 
 ## Etape 10 Affiche une popup avec détails au clic sur une collision
