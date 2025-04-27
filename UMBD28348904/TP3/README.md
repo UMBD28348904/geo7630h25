@@ -148,7 +148,23 @@ https://donnees.montreal.ca/fr/dataset/cd722e22-376b-4b89-9bc2-7c7ab317ef6b/reso
                 
 ![image](https://github.com/user-attachments/assets/709d16d0-bcda-4283-915b-60cd6d2f32d6)
 
-## Étape 4 : Ajout de bouton pour masquer la couche d'arrondissement
+
+## Etape 4 Ajout de la légende dynamique
+
+// Gère le clic sur les éléments de la légende pour filtrer les collisions selon la gravité
+
+    document.querySelectorAll('.legend-item').forEach(item => {
+        item.addEventListener('click', function () {
+            const gravite = this.getAttribute('data-gravite');
+            if (gravite === 'Tous') {
+                map.setFilter('collisions', null);
+            } else {
+                map.setFilter('collisions', ['==', ['get', 'GRAVITE'], gravite]);
+            }
+        });
+    });
+
+## Étape 5 : Ajout de bouton pour masquer la couche d'arrondissement
 
   // Affiche ou masque les arrondissements selon l'état de la case à cocher
   
@@ -158,7 +174,8 @@ https://donnees.montreal.ca/fr/dataset/cd722e22-376b-4b89-9bc2-7c7ab317ef6b/reso
         map.setLayoutProperty('arrondissements-labels', 'visibility', visibility);
     });
 
-## Étape 5 : Ajout de derouler pour les gravité
+
+## Étape 6 : Ajout de derouler pour les gravité
 
 inondationdropdown.addEventListener('change', function (e) {
         const selectedValue = e.target.value.trim();
@@ -178,7 +195,8 @@ inondationdropdown.addEventListener('change', function (e) {
             map.setFilter('collisions', ['==', ['get', 'GRAVITE'], selectedValue]);
 
 
-  ## Etape 6 Ajout de Kpis, ( Calcul de nombre d'accidents et de morts)
+
+ ## Etape 7  Ajout de Kpis, ( Calcul de nombre d'accidents et de morts)
   
             let nbAccidents = 0;
             let nbMorts = 0;
@@ -208,22 +226,7 @@ inondationdropdown.addEventListener('change', function (e) {
     }
 
 
-## Etape 7 Ajout de la légende dynamique
-
-// Gère le clic sur les éléments de la légende pour filtrer les collisions selon la gravité
-
-    document.querySelectorAll('.legend-item').forEach(item => {
-        item.addEventListener('click', function () {
-            const gravite = this.getAttribute('data-gravite');
-            if (gravite === 'Tous') {
-                map.setFilter('collisions', null);
-            } else {
-                map.setFilter('collisions', ['==', ['get', 'GRAVITE'], gravite]);
-            }
-        });
-    });
-    
-## Etape 8 changer l'apparence du curseur de la souris
+## Etape 8 changer le curseur en pointeur au survol des collision
 
   // Change le curseur en pointeur au survol des collisions
     map.on('mouseenter', 'collisions', () => {
@@ -233,7 +236,24 @@ inondationdropdown.addEventListener('change', function (e) {
         map.getCanvas().style.cursor = '';
     });
 
-## Etape 9 Affiche une popup avec détails au clic sur une collision
+
+
+## Etape 9
+
+// Fonction qui met à jour le compteur des collisions actuellement visibles
+    function mettreAJourCompteur() {
+        const compteurElement = document.getElementById('compteur');
+        if (!compteurElement) return;
+
+        const features = map.queryRenderedFeatures({ layers: ['collisions'] });
+        compteurElement.innerText = `Collisions visibles : ${features.length}`;
+    }
+
+    // Met à jour le compteur lorsque la carte a fini de se déplacer
+    map.on('moveend', mettreAJourCompteur);
+
+
+## Etape 10 Affiche une popup avec détails au clic sur une collision
 
     map.on('click', 'collisions', (e) => {
         const feature = e.features?.[0];
@@ -251,12 +271,13 @@ inondationdropdown.addEventListener('change', function (e) {
             .addTo(map);
     });
 
-## Etape 10 carte final
+
+## Etape 11 carte final
 
 ![image](https://github.com/user-attachments/assets/00170924-7e9a-4761-91cd-31ca14f1b65f)
 
 
-## Etape 11 codes complet .js
+## codes complet .js
 
 // Attend que le DOM soit complètement chargé avant d'exécuter le script
 document.addEventListener('DOMContentLoaded', function () {
