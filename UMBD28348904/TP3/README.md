@@ -177,7 +177,7 @@ https://donnees.montreal.ca/fr/dataset/cd722e22-376b-4b89-9bc2-7c7ab317ef6b/reso
 
 ## Étape 6 : Ajout de derouler pour les gravité
 
-inondationdropdown.addEventListener('change', function (e) {
+        inondationdropdown.addEventListener('change', function (e) {
         const selectedValue = e.target.value.trim();
 
         // Si les données ne sont pas chargées, avertit et sort
@@ -228,7 +228,8 @@ inondationdropdown.addEventListener('change', function (e) {
 
 ## Etape 8 changer le curseur en pointeur au survol des collision
 
-  // Change le curseur en pointeur au survol des collisions
+    // Change le curseur en pointeur au survol des collisions
+    
     map.on('mouseenter', 'collisions', () => {
         map.getCanvas().style.cursor = 'pointer';
     });
@@ -238,7 +239,7 @@ inondationdropdown.addEventListener('change', function (e) {
 
 ## Etape 9 Mise à jour dynamique du compteur de collisions visibles sur la carte
 
-// Fonction qui met à jour le compteur des collisions actuellement visibles
+  // Fonction qui met à jour le compteur des collisions actuellement visibles
     function mettreAJourCompteur() {
         const compteurElement = document.getElementById('compteur');
         if (!compteurElement) return;
@@ -278,8 +279,8 @@ inondationdropdown.addEventListener('change', function (e) {
 
 ## codes complet .js
 
-// Attend que le DOM soit complètement chargé avant d'exécuter le script
-document.addEventListener('DOMContentLoaded', function () {
+  // Attend que le DOM soit complètement chargé avant d'exécuter le script
+  document.addEventListener('DOMContentLoaded', function () {
 
     // Création de la carte avec Maplibre GL
     const map = new maplibregl.Map({
