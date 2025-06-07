@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h4 {
+    margin: 10px;
+}
+
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+}
+
+select, button {
+    padding: 5px;
+    font-size: 14px;
+}
+
+#map {
+    height: 90vh;
+    width: 100%;
+}

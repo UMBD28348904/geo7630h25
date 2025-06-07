@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Écoles partenaires</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h4>Ci-dessous, la liste de nos écoles partenaires :</h4>
+    <div class="filters">
+        <select id="programme">
+            <option value="">- Tout -</option>
+            <option value="Grande École">Grande École</option>
+            <option value="Bachelor">Bachelor</option>
+            <option value="Les deux">Grande École et Bachelor</option>
+        </select>
+        <select id="accreditation">
+            <option value="">- Tout -</option>
+            <!-- Remplir dynamiquement si nécessaire -->
+        </select>
+        <select id="type-depart">
+            <option value="">- Tout -</option>
+            <!-- Remplir dynamiquement si nécessaire -->
+        </select>
+        <button id="apply">appliquer</button>
+    </div>
+
+    <div id="map"></div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -23,3 +23,12 @@ services:
     volumes:
       - ./labo11:/usr/share/nginx/html:ro
     restart: always
+
+  
+  Travaux_personnel-web:
+    image: nginx
+    ports:
+      - 6000:80
+    volumes:
+      - ./Travaux_personnel:/usr/share/nginx/html:ro
+    restart: always
