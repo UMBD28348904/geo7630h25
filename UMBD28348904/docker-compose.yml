@@ -28,7 +28,7 @@ services:
   Travaux_personnel-web:
     image: nginx
     ports:
-      - 6000:80
+      - 4000:80
     volumes:
-      - ./Travaux_personnel:/usr/share/nginx/html:ro
+      - ./Travaux_personnel/pratique1:/usr/share/nginx/html:ro
     restart: always
