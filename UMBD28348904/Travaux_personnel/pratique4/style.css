@@ -1,0 +1,19 @@
+.container {
+width: 100%;
+height: 100%;
+display: flex;
+flex-direction: column;
+                    }
+
+                    
+         /* En-tête */
+.header {
+background-color: var(--quebec-blue);
+color: var(--quebec-white);
+padding: 1rem;
+display: flex;
+justify-content: space-between;
+align-items: center;
+height: var(--header-height);
+z-index: 2000;
+}

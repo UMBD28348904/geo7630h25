@@ -32,3 +32,19 @@ services:
     volumes:
       - ./Travaux_personnel/pratique1:/usr/share/nginx/html:ro
     restart: always
+  
+  Travaux_personnel3-web:
+    image: nginx
+    ports:
+      - 8000:80
+    volumes:
+      - ./Travaux_personnel/pratique3:/usr/share/nginx/html:ro
+    restart: always
+
+  Travaux_personnel4-web:
+    image: nginx
+    ports:
+      - 6000:80
+    volumes:
+      - ./Travaux_personnel/pratique4:/usr/share/nginx/html:ro
+    restart: always
