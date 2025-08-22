@@ -46,5 +46,5 @@ services:
     ports:
       - 6000:80
     volumes:
-      - ./Travaux_personnel/pratique4:/usr/share/nginx/html:ro
+      - ./Travaux_personnel/pratique5:/usr/share/nginx/html:ro
     restart: always
